@@ -64,3 +64,5 @@ app.use(require("./rutas/index.rutas") )
 app.use(require("./rutas/registroRutas"))
 
 module.exports = app;
+
+
