@@ -125,12 +125,15 @@ ul.show {
     }
 }
 
-.img{
-  position: fixed;
-  border-radius: 400px;
-  padding-top: 40px;
-  right: 70px;
-  left: 450px;
+.logoInicio{
+
+    position: fixed;
+    border-radius: 10px;
+    padding-top: 150px;
+    width: 90px;
+    height: 90px;
+    right: 70px;
+    left: 450px;
 }
 
 body {
