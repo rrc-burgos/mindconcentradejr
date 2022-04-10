@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ 
+ }
+ 
+ body{
+     background: #0F2027;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+ }
+ 
+ .container{
+     position: absolute;
+     width: 350px;
+     height: 400px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background: #2C5364;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 8px 8px 15px #0F2027
+     -8px -8px 25px;
+ 
+ 
+ }
+ 
+ .img2{
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+     box-shadow: 0px 0px 1px #203A43,
+     0px,0px 0px 5px #2C5364,
+     8px 8px 15px #0F2027
+     -8px -8px 15px #203A43;
+     margin-bottom: 20px;
+ }
+ 
+ h2{
+   font-size: 20px;
+   font-weight: 600;
+   color: #fff;
+     
+ }
+ 
+ #cedula{
+    margin: 20px 5px 20px 20px;
+    font-size: 15px;
+    color: #fff;
+ }
+
+ #usuario{
+     margin: 20px 5px 20px 20px;
+     font-size: 15px;
+     color: #fff;
+ }
+
+ #telefono{
+    margin: 20px 5px 20px 20px;
+    font-size: 15px;
+    color: #fff;
+}
+ 
+ #contraseña{
+     margin: 20px 5px 20px 20px;
+     font-size: 15px;
+     border-radius: 20px; 
+ }
+
+ .boton{
+     outline: none;
+     border: none;
+     cursor: pointer;
+     width: 70%;
+     height: 50px;
+     font-size: 20px;
+     font-weight:700;
+     border-radius: 30%;
+ }
+ 
+ 
+ 
+ 
+ body {
+     background-image: url(/img/fondo4.jpg);
+     background-repeat: repeat-y;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+   }
+ 
+   body::before {
+       content: "";
+       width:100%;
+       min-height: 100vh;
+       position: absolute;
+       top: 0;
+       left: 0;
+ 
+       background: linear-gradient(90deg,#52c4df, #ad55c1 );
+ 
+       opacity: 0.5;
+       z-index: -1;
+   }
+ 
