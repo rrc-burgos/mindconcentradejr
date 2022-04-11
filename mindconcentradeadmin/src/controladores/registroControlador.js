@@ -25,7 +25,7 @@ registroctl.login  = passport.authenticate("local.signin", {
     successRedirect: "/proyecto/agregar/",
     failureRedirect: "/ ",
     failureFlash : true
-}) 
+})  
 
 
 registroctl.cerrarSesion = (req, res, next) => {

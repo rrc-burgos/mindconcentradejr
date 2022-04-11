@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
+<link rel="stylesheet" href="style.css">
+<form action="/proyecto/agregar/" method="post">
+    <div id="contenedor">
+        <div id="titulo">
+            {{#each idMax}}
+            <h1>Agregar Proyecto N° <input value="{{'max(id_proyecto)'}}" type="text" name="numero" id="numero"></h1>
+            {{/each}}
+        </div>
+        <div id="Nombre">
+            <label>Nombre Proyecto:</label>
+            <input type="text" name="nombreProyecto" id="nombre">
+        </div>
+        <div id="Descripcion">
+            <label>Descripcion Proyecto:</label>
+            <input type="text" name="descripcionProyecto" id="descripcion">
+        </div>
+        <div id="Mision">
+            <label>Mision Proyecto:</label>
+            <input type="text" name="misionProyecto" id="mision">
+        </div>
+        <div id="Vision">
+            <label>Vision Proyecto:</label>
+            <input type="text" name="visionProyecto" id="vision">
+        </div>
+        <div id="objetivos">
+            <label>Objetivos:</label>
+            <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <LINK REL=StyleSheet HREF="/css/cliente.css" TYPE="text/css" MEDIA=screen>
-</head>
+        <div id="listaObjetivos"></div>
 
-<body>
-    <form action="/clientes/add" method="POST" id="f1">
-        <div id="contenedor">
-            <label>Cedula</label>
-            <input type="text" name="cedula" id="cedula">
+        <div id="boton">
+            <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
         </div>
-        <div id="contenedor">
-            <label>Nombre</label>
-            <input type="text" name="nombre" id="nombre">
+
+        <div id="guardar">
+            <button type="submit">Guardar</button>
         </div>
-        <div id="contenedor">
-            <label>Telefono</label>
-            <input type="number" name="telefono" id="telefono">
-        </div>
-        <button class="btn btn-success" type="submit" id="guardar">Guardar</button>
-    </form>
-</body>
-</html>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/objetivo.js"></script>

@@ -5,10 +5,10 @@ const agenda =(sequelize, type) =>{
             primaryKey: true,
             autoIncrement: true,
         },
-        nombre: type.STRING,
-        descripcion: type.STRING,
-        hora: type.STRING,
-        fecha: type.STRING,
+        nombreAgenda: type.STRING,
+        descripcionAgenda: type.STRING,
+        horaAgenda: type.STRING,
+        fechaAgenda: type.STRING,
 
         creacionAgendas:{
             type: 'TIMESTAMP',

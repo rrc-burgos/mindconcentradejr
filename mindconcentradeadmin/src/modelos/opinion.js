@@ -5,8 +5,8 @@ const opinion = (sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true
         },
-        comentarios: type.STRING,
-        fecha: type.STRING , 
+        comentariosOpinion: type.STRING,
+        fechaOpinion: type.STRING , 
  
         creacionOpiniones:{
             type: 'TIMESTAMP',

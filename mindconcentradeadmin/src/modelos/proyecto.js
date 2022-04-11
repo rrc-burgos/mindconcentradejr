@@ -5,12 +5,11 @@ const proyecto = (sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true
         },
-        nombre : type.STRING,
-        descripcion : type.STRING,
-        mision : type.STRING,
-        vision : type.STRING,
-        detalleProyecto: type.STRING,
-        Objetivo : type.STRING,
+        nombreProyecto : type.STRING,
+        descripcionProyecto : type.STRING(2500),
+        misionProyecto : type.STRING(2500),
+        visionProyecto : type.STRING(2500),
+        
  
         creacionProyecto:{
             type: 'TIMESTAMP',

@@ -1,19 +1,18 @@
-const consejo = (sequelize, type)=>{
-    return sequelize.define('consejo', {
-        id_consejo: {
+const detalleProyecto = (sequelize, type)=>{
+    return sequelize.define('detalleProyecto', {
+        id_detalleProyecto: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        nombreConsejo: type.STRING,
-        fechaConsejo: type.STRING, 
- 
-        creacionConsejos:{
+        objetivosProyecto: type.STRING(2500),
+
+        creacionDetalleProyecto:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
-        actualizacionConsejos:{
+        actualizacionDetalleProyecto:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP '),
             allowNull: false
@@ -23,4 +22,5 @@ const consejo = (sequelize, type)=>{
     })
 }
 
-module.exports = consejo
+
+module.exports = detalleProyecto

@@ -6,8 +6,8 @@ const actividades =(sequelize, type) =>{
             autoIncrement: true,
         },
         nombreActividad: type.STRING,
-        descripcion: type.STRING,
-        fecha: type.STRING ,
+        descripcionActividad: type.STRING,
+        fechaActividad: type.STRING ,
         
         creacionActividades:{
             type: 'TIMESTAMP',

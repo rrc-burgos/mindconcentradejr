@@ -5,11 +5,11 @@ const cliente = (sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true
         },
-        nombre: type.STRING,
-        apellido: type.STRING,
-        cedula: type.STRING,
-        direccion: type.STRING,
-        Celular: type.INTEGER(10),
+        nombreCliente: type.STRING,
+        apellidoCliente: type.STRING,
+        cedulaCliente: type.STRING,
+        direccionCliente: type.STRING,
+        CelularCliente: type.INTEGER(10),
         username: type.STRING(99),
         password: type.STRING, 
         creacionClientes:{
