@@ -1,40 +1,42 @@
-<link rel="stylesheet" href="style.css">
-<form action="/proyecto/agregar/" method="post">
-    <div id="contenedor">
+<link rel="stylesheet" href="/css/agregar.css ">
+<form action="/proyecto/agregar/" method="post" id="contenedor" >
+    <div class="controlador"><br>
         <div id="titulo">
             {{#each idMax}}
-            <h1>Agregar Proyecto N° <input value="{{'max(id_proyecto)'}}" type="text" name="numero" id="numero"></h1>
+            <label><b>AGREGAR PROYECTO Nº</b>
+                <input value="{{'max(id_proyecto)'}}" type="text" name="numero" id="numero">
+            </label>
             {{/each}}
         </div>
-        <div id="Nombre">
-            <label>Nombre Proyecto:</label>
+        <div id="Nombre"><br>
+            <label><b> Nombre Proyecto: </b></label>
             <input type="text" name="nombreProyecto" id="nombre">
         </div>
-        <div id="Descripcion">
-            <label>Descripcion Proyecto:</label>
+        <div id="Descripcion"><br>
+            <label><b> Descripcion Proyecto:</b></label>
             <input type="text" name="descripcionProyecto" id="descripcion">
         </div>
-        <div id="Mision">
-            <label>Mision Proyecto:</label>
+        <div id="Mision"><br>
+            <label><b>Mision Proyecto:</b></label>
             <input type="text" name="misionProyecto" id="mision">
         </div>
-        <div id="Vision">
-            <label>Vision Proyecto:</label>
+        <div id="Vision"><br>
+            <label><b>Vision Proyecto:</b></label>
             <input type="text" name="visionProyecto" id="vision">
         </div>
-        <div id="objetivos">
-            <label>Objetivos:</label>
+        <div id="objetivos"><br>
+            <label><b>Objetivos:</b></label>
             <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked>
-        </div>
+        </div><br>
 
         <div id="listaObjetivos"></div>
 
-        <div id="boton">
-            <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
+        <div id="crearObjeto"> <br>
+            <button type="button" onclick="objetivos.crear()"><b>Crear Objetivos</b></button>
         </div>
-
-        <div id="guardar">
-            <button type="submit">Guardar</button>
+        
+        <div id="guardar"><br>
+            <button type="submit"><b>Guardar</b></button>
         </div>
     </div>
 </form>

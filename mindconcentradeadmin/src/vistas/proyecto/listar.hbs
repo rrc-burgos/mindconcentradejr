@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="style.css">
-<form action="/proyecto/lista/{{user.id_usuario}}" method="get"></form>
-<div id="contenido">
+<link rel="stylesheet" href="/css/listar.css ">
+<form action="/proyecto/lista/{{user.id_usuario}}" method="get" id="contenedor"> 
+<div class="controlador">
     <div id="datos">
         {{#each lista}} 
         <div id="Nombre">
@@ -28,5 +28,5 @@
         </div>
         {{/each}}
     </div>
-
+</form>
 </div>

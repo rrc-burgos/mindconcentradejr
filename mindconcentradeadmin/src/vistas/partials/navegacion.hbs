@@ -1,21 +1,23 @@
 <link rel="stylesheet" href="/css/navegacion.css">
 {{#if user}}
-<nav>
-    
+<nav class="navegacion">
+
+
+
   <div id="nav1">
     <a id="nav" href="/clientes/lista/{{user.idUsuarios}}"> Clientes</a>
   </div>
   <div id="nav2">
-    <a href="/ProductoEntrada/lista/{{user.idUsuarios}}"> Inventario</a>
-  </div>
-  <div id="nav3">
     <a href="/proveedor/lista/{{user.idUsuarios}}"> Proveedores</a>
   </div>
-  <div id="nav4">
-    <a href="/tienda/lista/{{user.idUsuarios}}"> Tienda</a>
+    <div id="nav3">
+     <li class="active"><a href='/login'>Login</a></li>
+  </div>
+    <div id="nav4">
+     <li class="active"><a href="/registro">Registro</a></li>
   </div>
   <div id="nav5">
-    <a href="/CerrarSecion">Cierre la Sesión</a>
+    <a href="/CerrarSesion">...</a>
   </div>
 </nav>
 {{/if}}
