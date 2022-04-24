@@ -1,32 +1,53 @@
 <link rel="stylesheet" href="/css/listar.css ">
-<form action="/proyecto/lista/{{user.id_usuario}}" method="get" id="contenedor"> 
-<div class="controlador">
-    <div id="datos">
-        {{#each lista}} 
-        <div id="Nombre">
-            <label>{{nombreProyecto}}</label>
+
+<form action="/proyecto/lista/{{user.id_usuario}}" method="get">
+
+    <div class="controlador"><br>
+        <br>
+
+        <div class="datos">
+
+            {{#each lista}} 
+            <div id="Nombre">
+                <label><b> {{nombreProyecto}} </b></label>
+            </div>
+
+            <div id="Descripcion">
+                <label>{{descripcionProyecto}}</label>
+            </div>
+            
+            <div id="Mision">
+                <label>{{misionProyecto}}</label>
+            </div>
+
+            <div id="Vision">
+                <label>{{visionProyecto}}</label>
+            </div>
+
+            <div id="editar">
+            <a href="/proyecto/editar/{{id_proyecto}}">
+                <button type="button">Editar</button>
+            </a>
+            </div>
+
+            <br>
+
+            <div id="actividades">
+            <a href="/actividades/lista/{{id_proyecto}}">
+                <button type="button">Actividades</button>
+            </a>
+            </div>
+            <br>
+
+            {{/each}}
+            {{#each detalleLista}}
+
+            <div id="Objetivos">
+                <label>{{objetivosProyecto}}</label>
+            </div>
+            {{/each}}
+            
         </div>
-        <div id="Descripcion">
-            <label>{{descripcionProyecto}}</label>
-        </div>
-        <div id="Mision">
-            <label>{{misionProyecto}}</label>
-        </div>
-        <div id="Vision">
-            <label>{{visionProyecto}}</label>
-        </div>
-        <div id="editar">
-           <a href="/proyecto/editar/{{id_proyecto}}"><button type="button">Editar</button></a>
-        </div>
-        <div id="actividades">
-           <a href="/actividades/lista/{{id_proyecto}}"><button type="button">Actividades</button></a>
-        </div>
-        {{/each}}
-        {{#each detalleLista}}
-        <div id="Objetivos">
-            <label>{{objetivosProyecto}}</label>
-        </div>
-        {{/each}}
     </div>
 </form>
 </div>

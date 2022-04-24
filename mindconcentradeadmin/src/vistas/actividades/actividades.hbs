@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MindConcentrade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo-login.css">
+
+</head>
+
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <div id="wrapper">
+
+        <!-- BANNER WRAPPER -->
+        <div id="banner-wrapper">
+            <header>
+                <div id="header-inner">
+                    <a href="inicio.html" id="logo">
+                        <img src="imagenes/logo.jpeg" alt="">
+                    </a>
+
+                    <nav>
+                        <a href="#" id="menu-icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="inicio.html" class="current">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    Inicia Sesion
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register.html">
+                                    Registrate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="problemas.html">
+                                    Consejos Utiles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vida.html">
+                                    Vida Sana
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html">
+                                    Actividades
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <center>
+        <section class="one-third" id="skills">
+            <br>
+            <img src="imagenes/actividad2.gif" alt="" class="actividad">
+        </section>
+
+        <section class="one-third">
+            <br>
+            <img src="imagenes/actividad.gif" alt="" class="actividad">
+        </section>
+
+        <section class="one-third">
+            <br>
+            <img src="imagenes/actividad3.gif" alt="" class="actividad">
+        </section>
+    </center>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+    <div class="container">
+        <br>
+        <div class="row">
+
+            <div class="col-md-5">
+
+                <div class="card">
+                    <div class="card-header" style="text-align: center;">
+                        <b style="color: rgb(53, 133, 136);"> ACTIVIDADES</b>
+                    </div>
+                    <div class="card-body">
+                        <form class="formulario" id="formulario" method="post" action="actividades.php"
+                            onsubmit="aplicacion.Agregar()">
+
+                            <div class="mb-3">
+                                <label type="submit" class="form-label" name="actividad" id="actividad"><b>Ingresa tu
+                                        Actividad Aqui!!</b></label>
+                                <input
+                                    type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                                    class="form-control" name="actividad" id="actividad" aria-describedby="helpId"
+                                    placeholder="Nombre de tu  Actividad">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label type="date" class="form-label" name="dia" id="dia"><b>Dia</b> </label>
+                                <input
+                                    type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                                    class="form-control" name="dia" id="dia" aria-describedby="helpId"
+                                    placeholder="Dia">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label type="datetime" class="form-label" name="fecha" id="fecha"><b>Fecha</b> </label>
+                                <input
+                                    type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                                    class="form-control" name="fecha" id="fecha" aria-describedby="helpId"
+                                    placeholder="Fecha de la actividad año-mes-dia ">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label type="datetime-local" class="form-label" name="hora" id="hora"><b>Hora</b>
+                                </label>
+                                <input
+                                    type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+                                    class="form-control" name="hora" id="hora" aria-describedby="helpId"
+                                    placeholder="Hora de la Actividad 00:00:00">
+                                <br />
+                                <br />
+                                <button type="submit" class="btn btn-primary" value="Ingresar"><b>AGREGAR ACTIVIDAD </b>
+                                </button>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-7"> <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Actividad</th>
+                            <th>Dia</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="actividades"> 
+
+                        </div>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+        <script>
+
+            var url="http://localhost/MindCont/actividades";
+
+            var aplicacion = new function () {
+                this.actividad = document.getElementById("actividad");
+                this.dia = document.getElementById("dia");
+                this.fecha = document.getElementById("fecha");
+                this.hora = document.getElementById("hora");
+
+                this.actividades = document.getElementById("actividades");
+
+                this.Leer = function(){
+
+                    var datos = "";
+
+                    fetch(url)
+                    .then(r => r.json())
+                    .then((respuesta)=> {
+                     console.log(respuesta);
+
+                respuesta.map(
+                    function (actividad, actividades, array){
+                        datos += "<tr>";
+
+                        datos += "<td>" +actividad.id+ "</td>";
+                        datos += "<td>" +actividad.actividad+ "</td>";
+                        datos += "<td>" +actividad.dia+ "</td>";
+                        datos += "<td>" +actividad.fecha+ "</td>";
+                        datos += "<td>" +actividad.hora+ "</td>";
+                        datos += '<td>  <div class="btn-group" role="group" aria-label=""><button type="button" class="btn-btn-info">Editar</button><button type="button" class="btn-btn-danger" onclick="aplicacion.Borrar('+actividad.id+')" >Borrar</button></div>'+'</td>';
+
+                        datos += "</tr>";
+                    }
+                );
+                return this.actividades.innerHTML = datos;
+            })
+            .catch (console.log);
+
+                // datos = "<tr> <th>1</th><td>Correr</td><td>Lunes</td><td>14 Octubre 2021</td><td>05:00am</td><td>Editar | Borrar</td></tr>";
+                   
+            };
+
+            this.Agregar = function () {
+                console.log(actividad.value);
+                console.log(dia.value);
+                console.log(fecha.value);
+                console.log(hora.value);
+
+                var datosEnviar={actividad:this.actividad.value, dia:this.dia.value, fecha:this.fecha.value, hora:this.hora.value}
+
+                fetch(url+"?insetar=1",{method:"POST",body:JSON.stringify(datosEnviar) })
+                    .then(respuesta=>respuesta.json())
+                    .then((datosRespuesta)=>{
+                            console.log("Insertados");
+                            this.Leer();
+
+                    })
+                   .catch( console.log);    
+            
+            
+                };
+
+                this.Borrar=function(id){
+                    console.log(id);
+
+                    fetch(url+"?borrar="+id)
+                    .then(respuesta=>respuesta.json())
+                    .then((datosRespuesta)=>{
+                            this.Leer();
+
+                    })
+                    .catch( console.log);  
+                         
+
+                };
+
+                this.Editar = function(id){
+
+                    
+
+                }
+
+            }
+            aplicacion.Leer();
+
+        </script>
+    </div>
+
+
+
+
+
+    <br><br>
+    <!-- FOOTER -->
+    <footer>
+        <div class="banner-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="inicio.html"><b>Inicio</b></a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html"><b>Nosotros</b></a>
+                        </li>
+                        <li>
+                            <a href="terminos.html"><b>Terminos</b></a>
+                        </li>
+                        <li>
+                            <a href="contacto.html"><b>Contactanos</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon-text-text">
+                    <ul class="social">
+                        <li>
+                            <a href="mailto:contact@faztweb.com">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com/fazttech">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com/fazttech">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com/fazttech">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/fazttech">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="second-footer">
+        <p>
+            &copy; <a href="http://faztweb.com">MindConcentrade.com - 2021</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

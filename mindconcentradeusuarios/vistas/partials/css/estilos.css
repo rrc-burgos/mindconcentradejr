@@ -1,0 +1,338 @@
+/* css reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  }
+
+
+body{
+	font-family: 'Arial', sans-serif;
+	background-color: #72b4ce;
+	background: linear-gradient( #04617a,#55acc4,#0f8aac,#040474);   
+	margin: 0 auto;
+}
+
+
+/* nosotros */
+
+.main-section{
+    margin:0 auto;
+    margin-top: 5%;
+    padding: 0;
+}
+.modal-content{
+    background-color: gray;
+    opacity: .95;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px cyan;
+}
+
+.img-nosotros{
+
+	width: 300xp;
+    height: 400px;
+}
+
+.img-vida{
+
+	width: 250xp;
+    height: 300px;
+}
+
+.gif-alimentacion{
+	width: 250xp;
+    height: 200px;
+}
+
+.vida-gif{
+	border-radius: 20%;
+}
+.problemas-gif{
+	border-radius: 20%;
+}
+.actividad{
+
+	width: 250xp;
+    height: 200px;
+	border-radius: 20%;
+}
+
+.login{
+
+	width: 200xp;
+    height: 200px;
+	border-radius: 100%;
+}
+
+ 
+p {
+	color: #524c56;
+	font-size: 160%;
+	line-height: 155%;
+	padding: 3%;
+	text-indent: 2%;
+	text-align: justify;
+  }
+  
+  h3 {
+	font-size: 175%;
+	line-height: 155%;
+	font-weight: 500;
+	color: #524c56;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0;
+  }
+  
+  a {
+	color: #524c56;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  a:hover {
+	color: #c3d7df;
+  }
+  
+  img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+  }
+  
+  #wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+  }
+  
+  #banner-wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 0 3% 0;
+  }
+  
+  header {
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+  }
+  
+  header #logo img{
+	margin: 20px;
+	float: left;
+	width: 65px;
+	border-radius: 100%;
+  }
+  
+  /* NAVIGATION*/
+  nav {
+	float: right;
+	padding: 25px 20px 0px 0px;
+  }
+  
+  #menu-icon {
+	display: none;
+	font-size: 50px;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  nav ul li {
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+  }
+  
+  nav ul li a {
+	color: #083a5c;
+  }
+  
+  .current {
+	color: #091014;
+  }
+  
+  a:hover {
+	color: #a5bdcd;
+  }
+  /*
+  .slider {
+	max-width: 1200px;
+  }
+  
+  .slider img {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+  }*/
+  
+  .one-third {
+	width: 31.5%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  .icon-wrap {
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background-color: #17384e;
+	border-radius: 125px;
+	text-align: center;
+	margin-top: 3%;
+  }
+  
+  .icon-wrap i {
+	text-align: center;
+	color: #ffffff;
+	font-size: 450%;
+	padding: 20%;
+  }
+  
+  /* SECTION 2*/
+  .left-col {
+	float: left;
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	padding: 1%;
+  }
+  
+  .sidebar {
+	float: right;
+	margin: 0 auto;
+	width: 32%;
+	height: auto;
+	padding: 1%;
+  }
+  
+  /* ONE THIRD PADDING*/
+  .one-third-padding {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+  }
+  
+  .clearfix-padding {
+	clear: both;
+	padding: 2%;
+  }
+  
+  footer {
+	background: #2c3e50;
+	width: 100%;
+	overflow: auto;
+  }
+  .icon-text {
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .icon-text-icon {
+	float: left;
+	width: 20%;
+	padding: 4%;
+  }
+  .icon-text-text {
+	float: left;
+	width: 60%;
+	padding: 4% 4% 2% 0;
+	font-size:
+  }
+  
+  .footer-nav {
+	text-align: right;
+  }
+  
+  .footer-nav a {
+	font-size: 175%;
+	color: #c3d7df;
+	font-weight: 100;
+  }
+  
+  .footer-nav a:hover {
+	color: #f5f5f5;
+  }
+  
+  .social {
+	list-style-type: none;
+	text-align: center;
+  }
+  
+  .social li {
+	display: inline;
+  }
+  
+  .social i {
+	font-size: 350%;
+	margin: 1%;
+	padding: 5%;
+	color: #c3d7df;
+  }
+  
+  .social i:hover {
+	color: #f5f5f5;
+  }
+  
+  footer.second {
+	border-top: 1px solid #aadcd2;
+	text-align: center;
+	margin: 0;
+  }
+  footer.second p, .second a {
+	text-align: center;
+	color: #fff;
+	font-size: 160%;
+	line-height: 155%;
+  }
+  
+  @media screen and (max-width: 850px) {
+	p {
+	  font-size: 130%;
+	}
+	h3 {
+	  font-size: 150%;
+	}
+	header {
+	  height: 80px;
+	  position: relative;
+	}
+	header #logo {
+	  margin: 25px 0 50px -25px;
+	}
+  
+	#menu-icon {
+	  display: inline-block;
+	}
+  
+	nav:hover ul {
+	  display: block;
+	}
+  
+	nav ul, nav:active ul {
+	  display: none;
+	  z-index: 1000;
+	  position: absolute;
+	  padding: 20px;
+	  background: #f5f5f5;
+	  border: 1px solid #a5bdcd;
+	  right: 20px;
+	  width: 30%;
+	  opacity: .95;
+	}
+	nav li {
+	  text-align: center;
+	  width: 100%;
+	}
+	
+  
+  }
+  

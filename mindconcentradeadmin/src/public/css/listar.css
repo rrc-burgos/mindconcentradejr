@@ -1,32 +1,35 @@
 body::before {
     content: " ";
-    width:100%;
+    width: 100%;
     min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    background: linear-gradient(90deg, #a8d6e0, #135869);
     opacity: 0.5;
     z-index: -1;
 }
 
 
-.nav-enlace{
+.nav-enlace {
     display: inline-block;
-    color:#fff;
+    color: #fff;
     padding: 10px 30px;
     text-decoration: none;
 }
-.nav-enlace:hover{
+
+.nav-enlace:hover {
     background: rgb(#135869);
 }
-nav{
-    background: linear-gradient(90deg,#b0d7e0, #135869 );
+
+nav {
+    background: linear-gradient(90deg, #b0d7e0, #135869);
     padding: 10px;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
-.nav-boton{
+
+.nav-boton {
     background: salmon;
     color: #fff;
     padding: 10px 0;
@@ -35,78 +38,72 @@ nav{
 }
 
 @media (max-width: 500px) {
-    nav{
+    nav {
         background: black;
         flex-direction: column;
     }
-    .nav-enlace{
+
+    .nav-enlace {
         margin: 10px 0;
     }
-    .nav-boton{
+
+    .nav-boton {
         display: inline-block;
     }
-    .desaparece{
+
+    .desaparece {
         display: none;
     }
 }
 
-
-.container{
+.controlador {
     position: absolute;
-    width: 450px;
-    height: 400px;
+    width: 60%;
+    height: 500px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: #2C5364;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 8px 8px 15px #0F2027
-    -8px -8px 25px;
+    box-shadow: 8px 8px 15px #0F2027 -8px -8px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datos {
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2C5364;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 15px #0F2027 -8px -8px 25px;
 
 }
 
- .controlador{
-    position: absolute;
-    width: 450px;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #2C5364;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 8px 8px 15px #0F2027
-    -8px -8px 25px;
-    font-family: Arial, Helvetica, sans-serif;
- }
+#Nombre {
+    text-align: start;
+    color: rgb(5, 5, 5);
+}
 
- #guardar{
-     outline: none;
-     border: none;
-     cursor: pointer;
-     width: 50%;
-     height: 50px;
-     font-size: 20px;
-     border-radius: 30%;
-     align-items:center;
- }
- 
+button {
 
-#crearObjeto{
-     outline: none;
-     border: none;
-     cursor: pointer;
-     width: 50%;
-     height: 50px;
-     font-size: 20px;
-     font-weight:700;
-     border-radius: 30%;
-     align-items:center;
- }
- 
- 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    font-size: 20px;
+    font-weight:700;
+    border-radius: 10%;
+    color:black;
+    background: linear-gradient(90deg,#c46565, #a02e2e );
+}
+

@@ -1,4 +1,5 @@
 const proyectoctl ={}
+
 const orm = require("../configbd/database.orm")
 const sql = require("../configbd/database.sql")
 
@@ -61,6 +62,12 @@ proyectoctl.actualizar = async(req,res) =>{
     }
     req.flash("success","Exito al Actualizar")
     res.redirect("/proyecto/lista/"+id)
+}
+
+proyectoctl.cerrarSesion = (req, res, next) => {
+
+    req.logOut()
+    res.redirect("/")
 }
 
 module.exports=proyectoctl
