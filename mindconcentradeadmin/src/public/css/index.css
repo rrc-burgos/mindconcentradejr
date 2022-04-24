@@ -1,159 +1,87 @@
-nav {
-    background-color: aquamarine;
-    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
-    position: center;
+
+body::before {
+    content: "";
+    width:100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.menu {
-    background-color: aqua;
-    height: 75px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-    box-shadow: 5px 0 10px rgba(0,0,0, .6);
-}
-
-.logo {
-    color: black;
-    font-size: 35px;
-    padding: 0 80px;
-    font-weight: bold;
-}
-
-.menuit{
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-}
-
-.menuit li{
-    border-radius: 3px;
-    margin: 0 5px;
-}
-
-.menuit li a{
-    padding: 7px 13px;
+.nav-enlace{
+    display: inline-block;
+    color:#fff;
+    padding: 10px 30px;
     text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: black;
 }
-
-menuit li:hover,li.active{
-    background-color: rgbs(0,0,0, .3);
-    transition: 4s;
-
+.nav-enlace:hover{
+    background: rgb(#135869);
 }
-
-.btn_menu{
-    margin-right: 30px;
-    font-size: 25px;
-    color: black;
-    cursor: pointer;
+nav{
+    background: linear-gradient(90deg,#b0d7e0, #135869 );
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
     display: none;
 }
 
-ul.show {
-    top: 65px;
-
-}
-
-@media screen and (max-width: 952px) {
-    .logo {
-        font-size: 30px;
-        padding-left: 35px;
-    }
-
-    .menu items li a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 858px){
-    .menu {
-        height: 65px;
-
-    }
-
-    .btn_menu {
-        display: inline-flex;
-    }
-
-    .menuit {
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 65px);
-        background: #414141;
-        top: -100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-
-    }
-
-    .menuit li {
-        margin: 30px 0 0 0;
-        line-height: 30px;
-    }
-
-    .menuit li:hover {
-        background: none;
-    }
-
-    .menuit li a{
-        font-size: 20px;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .menuit li a:hover{
-        color: gray;
-    }
-    .logo{
-        font-size: 25px;
-        padding-left: 35px;
+@media (max-width: 500px) {
+    nav{
         background: black;
-        transition: background-color, width .2s
+        flex-direction: column;
     }
-
-    .logo:hover{
-        background: steelblue;
-        width: 400px;
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
     }
 }
 
-.logoInicio{
-
-    position: fixed;
-    border-radius: 10px;
-    padding-top: 150px;
-    width: 90px;
-    height: 90px;
-    right: 70px;
-    left: 450px;
+.titulo{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-    background-image: url(/img/fondo4.jpg);
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-  body::before {
-      content: "";
-      width:100%;
-      min-height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
+p{
+    text-align: justify;
+}
+#logom{
+    border-radius: 30px;  
+    width: 500px;
+    height: 400px;
+    transform: translate(150%, 2%);
 
-      background: linear-gradient(90deg,#52c4df, #ad55c1 );
+}
+.container{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 63%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    background: #2C5364;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 15px #0F2027
+    -8px -8px 25px;
 
-      opacity: 0.5;
-      z-index: -1;
-  }
+}
+

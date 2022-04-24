@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/css/agregar.css ">
-<form action="/proyecto/agregar/" method="post" id="contenedor" >
+
+<form action="/proyecto/agregar/" method="post" id="contenedor">
     <div class="controlador"><br>
         <div id="titulo">
             {{#each idMax}}
@@ -25,18 +26,19 @@
             <input type="text" name="visionProyecto" id="vision">
         </div>
         <div id="objetivos"><br>
-            <label><b>Objetivos:</b></label>
+            <label><b>Nº Objetivos Propuestos:</b></label>
             <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked>
         </div><br>
 
         <div id="listaObjetivos"></div>
 
-        <div id="crearObjeto"> <br>
-            <button type="button" onclick="objetivos.crear()"><b>Crear Objetivos</b></button>
+        <div> <br>
+            <button type="button" onclick="objetivos.crear()" id="crearObjeto"><b>Crear Objetivos</b></button>
         </div>
-        
-        <div id="guardar"><br>
-            <button type="submit"><b>Guardar</b></button>
+
+        <div ><br>
+            <button type="submit" id="confirmar"><b> Guardar </b></button>
+            <button type="submit" id="confirmar" ><b>  Cancelar </b></button>
         </div>
     </div>
 </form>

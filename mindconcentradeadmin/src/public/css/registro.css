@@ -1,110 +1,127 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
- 
- }
- 
- body{
-     background: #0F2027;  /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      
- }
- 
- .container{
-     position: absolute;
-     width: 350px;
-     height: 400px;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-     background: #2C5364;
-     border-radius: 20px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     box-shadow: 8px 8px 15px #0F2027
-     -8px -8px 25px;
- 
- 
- }
- 
- .img2{
-     width: 90px;
-     height: 90px;
-     border-radius: 50%;
-     box-shadow: 0px 0px 1px #203A43,
-     0px,0px 0px 5px #2C5364,
-     8px 8px 15px #0F2027
-     -8px -8px 15px #203A43;
-     margin-bottom: 20px;
- }
- 
- h2{
-   font-size: 20px;
-   font-weight: 600;
-   color: #fff;
-     
- }
- 
- #cedula{
-    margin: 20px 5px 20px 20px;
-    font-size: 15px;
-    color: #fff;
- }
 
- #usuario{
-     margin: 20px 5px 20px 20px;
-     font-size: 15px;
-     color: #fff;
- }
-
- #telefono{
-    margin: 20px 5px 20px 20px;
-    font-size: 15px;
-    color: #fff;
+body::before {
+    content: "";
+    width:100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    opacity: 0.5;
+    z-index: -1;
 }
- 
- #contraseña{
-     margin: 20px 5px 20px 20px;
-     font-size: 15px;
-     border-radius: 20px; 
- }
 
- .boton{
-     outline: none;
-     border: none;
-     cursor: pointer;
-     width: 70%;
-     height: 50px;
-     font-size: 20px;
-     font-weight:700;
-     border-radius: 30%;
- }
- 
- 
- 
- 
- body {
-     background-image: url(/img/fondo4.jpg);
-     background-repeat: repeat-y;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-   }
- 
-   body::before {
-       content: "";
-       width:100%;
-       min-height: 100vh;
-       position: absolute;
-       top: 0;
-       left: 0;
- 
-       background: linear-gradient(90deg,#52c4df, #ad55c1 );
- 
-       opacity: 0.5;
-       z-index: -1;
-   }
- 
+
+.nav-enlace{
+    display: inline-block;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rgb(#135869);
+}
+nav{
+    background: linear-gradient(90deg,#b0d7e0, #135869 );
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
+.container{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2C5364;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 15px #0F2027
+    -8px -8px 25px;
+
+
+}
+
+.img2{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #203A43,
+    0px,0px 0px 5px #2C5364,
+    8px 8px 15px #0F2027
+    -8px -8px 15px #203A43;
+    margin-bottom: 20px;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+    
+}
+
+label{
+    margin: 15px 5px 5px 10px;
+
+}
+
+#usuario{
+    margin: 20px 5px 20px 20px;
+    font-size: 15px;
+    color: #fff;   
+
+}
+#username{
+    border-radius: 10%;
+}
+
+#contraseña{
+    margin: 20px 5px 20px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    
+}
+#password{
+    border-radius: 10%;
+}
+
+#ingresar{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight:700;
+    border-radius: 10%;
+    color:black;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
+}

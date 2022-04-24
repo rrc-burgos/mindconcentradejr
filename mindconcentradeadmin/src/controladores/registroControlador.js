@@ -9,7 +9,7 @@ registroctl.mostrar = (req, res) => {
 }
 
 registroctl.registrar = passport.authenticate("local.signup", {
-    successRedirect: "/cerrar",
+    successRedirect: "/",
     failureRedirect: "/registro",
     failureFlash : true
 }) 
