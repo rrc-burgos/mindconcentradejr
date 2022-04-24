@@ -14,7 +14,6 @@ registroctl.registrar = passport.authenticate("local.signup", {
     failureFlash : true
 }) 
 
-
 registroctl.mostrarlogin = (req, res) => {
 
     res.render("usuario/login")
