@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/agenda/editar/{{id_agenda}}" method="post" id="contenedor">
+    <div class="controlador">
+        <div id="titulo">
+            <h1>Editar datos del Proyecto</h1>
+        </div>
+        <div id="Nombre">
+            <label>Nombre Proyecto:</label>
+            <input value="{{nombreAgenda}}" type="text" name="nombreAgenda" id="nombre">
+        </div>
+        <div id="Descripcion">
+            <label>Descripcion Proyecto:</label>
+            <input value="{{descripcionAgenda}}" type="text" name="descripcionAgenda" id="descripcion">
+        </div>
+        <div id="Mision">
+            <label>Hora de la Agenda:</label>
+            <input value="{{horaAgenda}}" type="text" name="horaAgenda" id="mision">
+        </div>
+        <div id="Vision">
+            <label>Fecha de la Agenda:</label>
+            <input value="{{fechaAgenda}}" type="text" name="fechaAgenda" id="vision">
+        </div>
+        {{/each}}
+        
+        <div id="guardar">
+            <button type="submit">Actualizar</button>
+        </div>
+    </div>
+</form>

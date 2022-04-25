@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/listar.css ">
+
+<form action="/agenda/lista/{{user.id_usuario}}" method="get">
+
+    <div class="controlador"><br>
+        <br>
+
+        <div class="datos">
+
+            {{#each lista}} 
+            <div id="Nombre">
+                <label><b> {{nombreAgenda}} </b></label>
+            </div>
+
+            <div id="Descripcion">
+                <label>{{descripcionAgenda}}</label>
+            </div>
+            
+            <div id="Mision">
+                <label>{{horaAgenda}}</label>
+            </div>
+
+            <div id="Vision">
+                <label>{{fechaAgenda}}</label>
+            </div>
+
+            <div id="editar">
+            <a href="/agenda/editar/{{id_agenda}}">
+                <button type="button">Editar</button>
+            </a>
+            </div>
+
+
+             <div id="eliminar">
+            <a href="/agenda/eliminar/{{id_agenda}}">
+                <button type="button">Eliminar</button>
+            </a>
+            </div>
+
+            <br>
+
+            {{/each}}
+           
+        </div>
+    </div>
+</form>
+</div>
+<div id="agregar">
+    <a href="/agenda/agregar/{{user.id_usuario}}">
+    <button type="button">+</button>
+    </a>
+</div>

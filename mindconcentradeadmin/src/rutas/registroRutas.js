@@ -2,7 +2,7 @@ const express = require('express');
 
 const rutas = express.Router() 
 
-const { mostrar, registrar, mostrarlogin, login, cerrarSesion } = require("../controladores/registroControlador")
+const { mostrar, registrar, mostrarlogin, login, cerrarSesion} = require("../controladores/registroControlador")
 
 rutas.get("/registro", mostrar )
 
@@ -14,4 +14,5 @@ rutas.post("/login", login)
 
 rutas.get("/cerrar", cerrarSesion)  
 
-module.exports = rutas
+module.exports = rutas  
+
