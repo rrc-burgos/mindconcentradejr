@@ -19,8 +19,9 @@ body::before {
     text-decoration: none;
 }
 .nav-enlace:hover{
-    background: rgb(#135869);
+        color: #01131f;
 }
+
 nav{
     background: linear-gradient(90deg,#b0d7e0, #135869 );
     padding: 10px;

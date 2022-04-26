@@ -5,7 +5,7 @@
     <div class="controlador"><br>
         <br>
 
-        <div class="datos">
+        <div id="contenedor">
 
             {{#each lista}} 
             <div id="Nombre">
@@ -24,16 +24,16 @@
                 <label>{{fechaAgenda}}</label>
             </div>
 
-            <div id="editar">
+            <div>
             <a href="/agenda/editar/{{id_agenda}}">
-                <button type="button">Editar</button>
+                <button type="button" id="editar">Editar</button>
             </a>
             </div>
 
 
-             <div id="eliminar">
+             <div>
             <a href="/agenda/eliminar/{{id_agenda}}">
-                <button type="button">Eliminar</button>
+                <button type="button" id="eliminar" >Eliminar</button>
             </a>
             </div>
 
@@ -47,6 +47,6 @@
 </div>
 <div id="agregar">
     <a href="/agenda/agregar/{{user.id_usuario}}">
-    <button type="button">+</button>
+    <button type="button" id="agregar"><b> AGREGAR + </b></button>
     </a>
 </div>
