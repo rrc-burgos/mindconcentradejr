@@ -55,6 +55,15 @@ categoriactl.actualizar = async(req,res) =>{
     res.redirect("/categoria/lista/"+id)
 }
 
+categoriactl.eliminar = async(req, res) => {
+    const id = req.user.id_usuario
+    const ids = req.params.id
+    await orm.categoria.destroy({where:{id_categoria:ids}})
+
+    req.flash("success","Exito al Eliminar")
+    res.redirect("/categoria/lista/"+id)
+}
+
 categoriactl.cerrarSesion = (req, res, next) => {
 
     req.logOut()
