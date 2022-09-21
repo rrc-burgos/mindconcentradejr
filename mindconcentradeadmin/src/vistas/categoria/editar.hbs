@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/categoria/editar/{{id_categoria}}" method="post" >
+
+    <div class=" " id="contenedor">
+
+        <div id="titulo">
+            <h1>Editar datos de la Categoría</h1>
+        </div>
+        <br>
+
+        <div id="Nombre">
+            <label>Nombre de la Categoría:</label>
+            <input value="{{nombreCategoria}}" type="text" name="nombreCategoria" id="nombre">
+        </div>
+
+        <div id="Descripcion">
+            <label>Descripcion de la Categoría:</label>
+            <input value="{{descripcionCategoria}}" type="text" name="descripcionCategoria" id="descripcion">
+        </div>
+        
+        <br>
+        
+        <div id="guardar">
+            <button type="submit" id="actualizar">Actualizar</button>
+        </div>
+    </div>
+</form>
+{{/each}}
