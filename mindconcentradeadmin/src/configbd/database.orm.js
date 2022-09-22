@@ -23,6 +23,8 @@ const actividadesModelos = require ("../modelos/actividades")
 const agendaModelos = require ("../modelos/agenda")
 const proyectoModelos = require ("../modelos/proyecto")
 const detalleProyectoModelo = require ("../modelos/detalleProyecto");
+const preguntaModelos = require ("../modelos/pregunta")
+const detallePreguntaModelos = require ("../modelos/detallePregunta")
 
 
 
@@ -64,6 +66,8 @@ const actividades = actividadesModelos(sequelize, Sequelize)
 const agenda = agendaModelos(sequelize, Sequelize)
 const proyecto = proyectoModelos(sequelize, Sequelize)
 const detalleProyecto = detalleProyectoModelo(sequelize, Sequelize)
+const pregunta = preguntaModelos(sequelize, Sequelize)
+const detallePregunta = detallePreguntaModelos(sequelize, Sequelize)
 
 usuario.hasMany(actividades)
 actividades.belongsTo(usuario)
@@ -86,6 +90,12 @@ consejo.belongsTo(cliente)
 consejo.hasMany(detalleConsejo)
 detalleConsejo.belongsTo(consejo)
 
+usuario.hasMany(pregunta)
+pregunta.belongsTo(usuario)
+
+pregunta.hasMany(detallePregunta)
+detallePregunta.belongsTo(pregunta)
+
 
 module.exports = {
   usuario,
@@ -96,6 +106,8 @@ module.exports = {
   actividades,
   agenda,
   proyecto,
-  detalleProyecto
+  detalleProyecto,
+  pregunta,
+  detallePregunta
   
 }

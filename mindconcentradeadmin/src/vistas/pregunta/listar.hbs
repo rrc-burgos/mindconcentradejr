@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/css/listar.css ">
+
+<form action="/pregunta/lista/{{user.id_usuario}}" method="get">
+
+    <div id="contenedor"><br>
+        <br>
+
+        <div class="datos">
+
+            {{#each lista}} 
+            <div id="Numero">
+                <label><b> {{numeroPregunta}} </b></label>
+            </div>
+
+            <div id="Pregunta">
+                <label>{{pregunta}}</label>
+            </div>
+            
+            <div id="Observacion">
+                <label>{{observacion}}</label>
+            </div>
+
+            <div id="Estado">
+                <label>{{estado}}</label>
+            </div>
+
+            <div id="editar">
+            <a href="/proyecto/editar/{{id_pregunta}}">
+                <button type="button" id="editar" >Editar</button>
+            </a>
+            </div>
+
+              <div>
+            <a href="/agenda/eliminar/{{id_pregunta}}">
+                <button type="button" id="eliminar" >Eliminar</button>
+            </a>
+            </div>
+
+            <br>
+
+            {{/each}}
+            {{#each detalleLista}}
+
+            <div id="Preguntas">
+                <label>{{objetivosPregunta}}</label>
+            </div>
+            {{/each}}
+            
+        </div>
+    </div>
+</form>
+</div>
+
+<div id="agregar">
+    <a href="/agenda/agregar/{{user.id_usuario}}">
+    <button type="button" id="agregar"><b> AGREGAR + </b></button>
+    </a>
+</div>
