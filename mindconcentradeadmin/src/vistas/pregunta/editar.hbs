@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/editar.css ">
 {{#each lista}}
-<form action="/proyecto/editar/{{id_pregunta}}" method="post" >
+<form action="/pregunta/editar/{{id_pregunta}}" method="post" >
 
     <div class=" " id="contenedor">
 
@@ -27,9 +27,6 @@
         </div>
         {{/each}}
         
-        <div id="preguntas">
-            <label>Preguntas:</label>
-        </div>
 
         <div id="listaPregunta">
             {{#each detalleLista}}
