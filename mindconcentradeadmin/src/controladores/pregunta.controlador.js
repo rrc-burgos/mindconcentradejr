@@ -20,9 +20,7 @@ preguntactl.enviar = async(req,res) =>{
         usuarioIdUsuario:id
     }
     await orm.pregunta.create(nuevoPregunta)
-    for (let i=0; i< observacion.length; i++){
-        await sql.query("insert into detallePregunta(objetivosPregunta,preguntumIdPregunta) values(?,?)",[observacion[i],numero])
-    }
+  
     req.flash("success","Exito al Guardar")
     res.redirect("/pregunta/lista/"+id)
 }
@@ -57,13 +55,9 @@ preguntactl.actualizar = async(req,res) =>{
     .then(actualizar => {
         actualizar.update(nuevoPregunta)
     })
-    for (let i=0; i< observacion.length; i++){
-        await sql.query("update detallePregunta set objetivosPregunta =? where id_detallePregunta =?",[observacion[i],(parseInt(ids)+i)])
-    }
     req.flash("success","Exito al Actualizar")
     res.redirect("/pregunta/lista/"+id)
 }
-
 
 
 preguntactl.cerrarSesion = (req, res, next) => {
