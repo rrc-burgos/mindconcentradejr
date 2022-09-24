@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/proyecto/editar/{{id_proyecto}}" method="post" >
+
+    <div class=" " id="contenedor">
+
+        <div id="titulo">
+            <h1>Editar datos del Proyecto</h1>
+        </div>
+        <br>
+        
+        <div id="Nombre">
+            <label>Nombre Proyecto:</label>
+            <input value="{{nombreProyecto}}" type="text" name="nombreProyecto" id="nombre">
+        </div>
+        <div id="Descripcion">
+            <label>Descripcion Proyecto:</label>
+            <input value="{{descripcionProyecto}}" type="text" name="descripcionProyecto" id="descripcion">
+        </div>
+        <div id="Mision">
+            <label>Mision Proyecto:</label>
+            <input value="{{misionProyecto}}" type="text" name="misionProyecto" id="mision">
+        </div>
+        <div id="Vision">
+            <label>Vision Proyecto:</label>
+            <input value="{{visionProyecto}}" type="text" name="visionProyecto" id="vision">
+        </div>
+        {{/each}}
+        
+        <div id="objetivos">
+            <label>Objetivos:</label>
+        </div>
+
+        <div id="listaObjetivos">
+            {{#each detalleLista}}
+            <textarea name="objetivos" id="Objetivo">{{objetivosProyecto}}</textarea>
+            {{/each}}
+        </div>
+        <br>
+        
+        <div id="guardar">
+            <button type="submit" id="actualizar">Actualizar</button>
+        </div>
+    </div>
+</form>
