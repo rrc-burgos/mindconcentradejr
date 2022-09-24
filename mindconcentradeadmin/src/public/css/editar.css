@@ -87,6 +87,19 @@ nav a{
     font-weight:700;
     border-radius: 5%;
     color:black;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    background: linear-gradient(90deg, #a8e0ad, #1d6913);
+    align-items: center;
+ }
+
+ #permisos{
+     
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #dae0a8, #e0dd11);
     align-items: center;
  }

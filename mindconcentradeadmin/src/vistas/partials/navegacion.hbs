@@ -2,21 +2,22 @@
 {{#if user}}
 
 <nav>
-  <div id="nav1">
-    <a href="/problemas">Consejos</a>
-  </div>
-  <div id="nav2">
-    <a href="/vida"> Vida sana</a>
-  </div>
-  <div id="nav3">
-    <a href="/agenda/lista/{{user.id_usuario}}"> Agenda </a>
-  </div>
-   <div id="nav4">
-    <a href="/proyecto/agregar">Proyecto</a>
-  </div>
-  <div id="nav5">
-    <a href="/cerrar">Cierre Sesión</a>
+  <div id="navegar">
+    <div id="nav1">
+      <a href="/problemas">Consejos</a>
+    </div>
+    <div id="nav2">
+      <a href="/rol/lista/{{user.id_usuario}}"> Roles </a>
+    </div>
+    <div id="nav3">
+      <a href="/agenda/lista/{{user.id_usuario}}"> Agenda </a>
+    </div>
+    <div id="nav4">
+      <a href="/proyecto/agregar">Proyecto</a>
+    </div>
+    <div id="nav5">
+      <a href="/cerrar">Cierre Sesión</a>
+    </div>
   </div>
 </nav>
 {{/if}}
-
