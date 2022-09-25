@@ -62,17 +62,10 @@ preguntactl.actualizar = async(req,res) =>{
 preguntactl.eliminar = async(req, res) => {
     const id = req.user.id_usuario
     const ids = req.params.id
-    await orm.agenda.destroy({where:{id_pregunta:ids}})
+    await orm.pregunta.destroy({where:{id_pregunta:ids}})
 
     req.flash("success","Exito al Eliminar")
     res.redirect("/pregunta/lista/"+id)
-}
-
-
-preguntactl.cerrarSesion = (req, res, next) => {
-
-    req.logOut()
-    res.redirect("/")
 }
 
 module.exports=preguntactl

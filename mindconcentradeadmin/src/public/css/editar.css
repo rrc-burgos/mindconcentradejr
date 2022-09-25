@@ -1,3 +1,44 @@
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
+
 body::before {
     content: " ";
     width:100%;
@@ -9,63 +50,6 @@ body::before {
     opacity: 0.5;
     z-index: -1;
 }
-
-nav{
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    right: 10%;
-    font-size: 26px;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height:  90px;
-    display: block;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-nav :hover{
-
-    color: #01131f;
-}
-
-nav a{
-    color: white;
-}
-
-#nav1{
-    position: absolute;
-    top: 14%;
-    left: 3%;
-}
-
-#nav2{
-    position: absolute;
-    top: 14%;
-    left: 22%;
-}
-
-#nav3{
-    position: absolute;
-    top: 14%;
-    left: 42%;
-}
-
-#nav4{
-    position: absolute;
-    top: 14%;
-    left: 60%;
-}
-
-#nav5{
-    position: absolute;
-    top: 14%;
-    left: 80%;
-}
-
-
  #contenedor{
      width: 800px;
      background: linear-gradient(90deg,#4badc4, #055468 );
