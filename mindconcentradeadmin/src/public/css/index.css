@@ -1,34 +1,19 @@
-
-body::before {
-    content: " ";
-    width:100%;
-    min-height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
-    opacity: 0.5;
-    z-index: -1;
-}
-
-nav{
-    background: linear-gradient(40deg,#b0d7e0, #135869 );
-    padding: 10px;
-    display: flex;
-    justify-content: space-around; 
-}
-
 .nav-enlace{
     display: inline-block;
+    background: salmon;
     color:#fff;
     padding: 10px 30px;
     text-decoration: none;
 }
 .nav-enlace:hover{
-
-    color: #01131f;
+    background: rosybrown;
 }
-
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
 .nav-boton{
     background: salmon;
     color: #fff;
@@ -37,7 +22,7 @@ nav{
     display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
     nav{
         background: black;
         flex-direction: column;
@@ -51,6 +36,19 @@ nav{
     .desaparece{
         display: none;
     }
+}
+
+
+body::before {
+    content: " ";
+    width:100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .titulo{

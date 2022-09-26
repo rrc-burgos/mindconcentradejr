@@ -2,6 +2,10 @@
 
 <form action="/proyecto/agregar/" method="post" id="contenedor">
     <div class="controlador"><br>
+        <div id="tema">
+            <label><b>INGRESO DE PROYECTOS PARA EL USUARIO</b></label>
+        </div><br><br>
+
         <div id="titulo">
             {{#each idMax}}
             <label><b>AGREGAR PROYECTO Nº</b>
@@ -27,7 +31,7 @@
         </div>
         <div id="objetivos"><br>
             <label><b>Nº Objetivos Propuestos:</b></label>
-            <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked>
+            <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked><b> (Ingrese hasta maximo 4 Objetivos)</b>
         </div><br>
 
         <div id="listaObjetivos"></div>
@@ -43,8 +47,8 @@
     </div>
 </form>
 
-<div >
- <a href="/"> <button type="buttom" id="cancelar"><b>  Cancelar </b></button></a>
+<div>
+    <a href="/"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
 </div>
 
 <script src="/js/numero.js"></script>

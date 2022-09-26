@@ -1,3 +1,44 @@
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
+
 body::before {
     content: " ";
     width:100%;
@@ -9,72 +50,30 @@ body::before {
     opacity: 0.5;
     z-index: -1;
 }
+button{
 
-nav{
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    right: 10%;
-    font-size: 26px;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height:  90px;
-    display: block;
+    outline: none;
+    border: none;
     cursor: pointer;
-    overflow: hidden;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5%;
+    color: black;
+    background: linear-gradient(90deg, #c6dee4, #74a5b1);
+    align-items: center;
+
 }
 
-nav :hover{
-
-    color: #01131f;
-}
-
-nav a{
-    color: white;
-}
-
-#nav1{
-    position: absolute;
-    top: 14%;
-    left: 3%;
-}
-
-#nav2{
-    position: absolute;
-    top: 14%;
-    left: 22%;
-}
-
-#nav3{
-    position: absolute;
-    top: 14%;
-    left: 42%;
-}
-
-#nav4{
-    position: absolute;
-    top: 14%;
-    left: 60%;
-}
-
-#nav5{
-    position: absolute;
-    top: 14%;
-    left: 80%;
-}
-
-#contenedor{
-    width: 900px;
-    background: linear-gradient(90deg,#4badc4, #055468 );
+#contenedor {
+    width: 75%;
+    background: linear-gradient(90deg, #4badc4, #055468);
     padding: 60px;
-   margin: auto;
-   margin-top: 90px;
-   border-radius: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color: black;
-   font-weight:550;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 550;
 }
 
 #Nombre {
@@ -82,40 +81,40 @@ nav a{
     color: rgb(5, 5, 5);
 }
 
-#editar{
+#editar {
 
     outline: none;
     border: none;
     cursor: pointer;
     font-size: 25px;
-    font-weight:700;
+    font-weight: 700;
     border-radius: 5%;
-    color:black;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    color: black;
+    background: linear-gradient(90deg, #dae0a8, #e0dd11);
     align-items: center;
- }
- 
- #eliminar{
+}
+
+#eliminar {
     outline: none;
     border: none;
     cursor: pointer;
     font-size: 25px;
-    font-weight:700;
+    font-weight: 700;
     border-radius: 5%;
-    color:black;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    color: black;
+    background: linear-gradient(90deg, #d18080, #b31010);
     align-items: center;
- }
+}
 
- #agregar{
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+#agregar {
+    background: linear-gradient(90deg, #a8e0ad, #1d6913);
     border: none;
     cursor: pointer;
     border-radius: 5%;
     position: absolute;
-    top: 25%;
-    left: 70%;
+    top: 24%;
+    left: 76%;
     font-size: 25px;
-    color:black;
+    color: black;
 
 }

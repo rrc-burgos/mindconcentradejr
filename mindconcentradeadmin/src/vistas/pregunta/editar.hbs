@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/pregunta/editar/{{id_pregunta}}" method="post" >
+
+    <div class=" " id="contenedor">
+
+        <div id="titulo">
+            <h1>Editar datos de la Pregunta</h1>
+        </div>
+        <br>
+        
+        <div id="Numeroi">
+            <label>Numero de Pregunta:</label>
+            <input value="{{numeroPregunta}}" type="text" name="numeroPregunta" id="numeroi">
+        </div>
+        <div id="Preguntai">
+            <label>Pregunta:</label>
+            <input value="{{pregunta}}" type="text" name="pregunta" id="preguntai">
+        </div>
+        <div id="Observacioni">
+            <label>Observacion:</label>
+            <input value="{{observacion}}" type="text" name="observacion" id="observacioni">
+        </div>
+        <div id="Estadoi">
+            <label>Estado:</label>
+            <input value="{{estado}}" type="text" name="estado" id="estadoi">
+        </div>
+        {{/each}}
+        
+
+        <div id="listaPregunta">
+            {{#each detalleLista}}
+            <textarea name="preguntas" id="Pregunta">{{objetivosPregunta}}</textarea>
+            {{/each}}
+        </div>
+        <br>
+        
+        <div id="guardar">
+            <button type="submit" id="actualizar">Actualizar</button>
+        </div>
+    </div>
+</form>
