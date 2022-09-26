@@ -28,7 +28,7 @@ app.set('view engine', '.hbs');
 
 
 //midlewars
-app.use(morgan('dev'));
+app.use(morgan('dev')); //renderizar los datos
 app.use(bodyparser.urlencoded({
     extended: false
 }));
@@ -68,5 +68,6 @@ app.use("/agenda",require("./rutas/agenda.rutas"))
 app.use(require("./rutas/vida.rutas")) 
 app.use("/pregunta",require("./rutas/pregunta.rutas"))
 app.use("/rol",require("./rutas/rol.rutas"))
+app.use("/usuario", require("./rutas/usuario.rutas"))
 
 module.exports = app;
