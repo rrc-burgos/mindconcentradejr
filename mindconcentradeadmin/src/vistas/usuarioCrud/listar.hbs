@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/src/public/css/usuarioCrud/listar.css">
+
+<form action="/proyecto/lista/{{user.id_usuario}}" method="get">
+
+    <div class="crudUsuarioListar" id="contenedor"><br>
+        <br>
+
+        <div class="datos">
+
+            {{#each lista}} 
+            <div id="NombreUsuario">
+                <label><b> {{nombreUsuario}} </b></label>
+            </div>
+
+            <div id="ApellidoUsuario">
+                <label>{{apellidoUsuario}}</label>
+            </div>
+            
+            <div id="CedulaUsuario">
+                <label>{{cedulaUsuario}}</label>
+            </div>
+
+            <div id="DireccionUsuario">
+                <label>{{DireccionUsuario}}</label>
+            </div>
+
+            <div id="TelefonoUsuario">
+                <label><b> {{telefonoUsuario}} </b></label>
+            </div>
+
+            <div id="Correo">
+                <label>{{correoUsuario}}</label>
+            </div>
+            
+            <div id="Cargo">
+                <label>{{cargoUsuario}}</label>
+            </div>
+
+            <div id="Foto">
+                <label>{{fotoUsuario}}</label>
+            </div>
+
+            <div id="editar">
+            <a href="/proyecto/editar/{{id_proyecto}}">
+                <button type="button" id="editar" >Editar</button>
+            </a>
+            </div>
+
+            <br>
+
+            {{/each}}
+            {{#each detalleLista}}
+
+            <div id="Objetivos">
+                <label>{{objetivosProyecto}}</label>
+            </div>
+            {{/each}}
+            
+        </div>
+    </div>
+</form>
+</div>
