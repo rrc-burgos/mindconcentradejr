@@ -27,6 +27,8 @@ const preguntaModelos = require ("../modelos/pregunta")
 const detallePreguntaModelos = require ("../modelos/detallePregunta")
 const rolModelos = require ("../modelos/rol")
 const permisoModelos = require ("../modelos/permiso")
+const categoriaModelos = require ("../modelos/categoria")
+const detalleCategoriaModelo = require ("../modelos/detalleCategoria");
 
 
 
@@ -72,6 +74,8 @@ const pregunta = preguntaModelos(sequelize, Sequelize)
 const detallePregunta = detallePreguntaModelos(sequelize, Sequelize)
 const rol = rolModelos(sequelize, Sequelize)
 const permiso = permisoModelos(sequelize, Sequelize)
+const categoria = categoriaModelos(sequelize, Sequelize)
+const detalleCategoria = detalleCategoriaModelo(sequelize, Sequelize)
 
 usuario.hasMany(actividades)
 actividades.belongsTo(usuario)
@@ -106,6 +110,11 @@ pregunta.belongsTo(usuario)
 pregunta.hasMany(detallePregunta)
 detallePregunta.belongsTo(pregunta)
 
+usuario.hasMany(categoria)
+categoria.belongsTo(usuario)
+
+categoria.hasMany(detalleCategoria)
+detalleCategoria.belongsTo(categoria)
 
 
 
@@ -123,5 +132,9 @@ module.exports = {
   pregunta,
   detallePregunta,  
   rol,
-  permiso
+  permiso,
+  proyecto,
+  detalleProyecto,
+  categoria,
+  detalleCategoria
 }
