@@ -1,30 +1,32 @@
 .nav-enlace{
     display: inline-block;
-    background: salmon;
+    background: #124e5e;
     color:#fff;
     padding: 10px 30px;
     text-decoration: none;
+    border-radius: 10px;
 }
 .nav-enlace:hover{
-    background: rosybrown;
+    background: #addae5;
 }
 nav{
-    background: rebeccapurple;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
     padding: 10px;
     display: flex;
     justify-content: space-around; 
 }
 .nav-boton{
-    background: salmon;
+    background: #093846;
     color: #fff;
     padding: 10px 0;
     border: 2px solid #fff;
     display: none;
+    border-radius: 8px;
 }
 
 @media (max-width: 1024px) {
     nav{
-        background: black;
+        background: linear-gradient(90deg,#a8d6e0, #135869 );
         flex-direction: column;
     }
     .nav-enlace{
@@ -37,3 +39,5 @@ nav{
         display: none;
     }
 }
+
+

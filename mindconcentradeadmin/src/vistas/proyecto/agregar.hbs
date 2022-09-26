@@ -1,55 +1,58 @@
 <link rel="stylesheet" href="/css/agregar.css ">
 
-<form action="/proyecto/agregar/" method="post" id="contenedor">
-    <div class="controlador"><br>
-        <div id="tema">
-            <label><b>INGRESO DE PROYECTOS PARA EL USUARIO</b></label>
-        </div><br><br>
+<body>
+    <form action="/proyecto/agregar/" method="post" id="contenedor">
+        <div class="controlador"><br>
+            <div id="tema">
+                <label><b>INGRESO DE PROYECTOS PARA EL USUARIO</b></label>
+            </div><br><br>
 
-        <div id="titulo">
-            {{#each idMax}}
-            <label><b>AGREGAR PROYECTO Nº</b>
-                <input value="{{'max(id_proyecto)'}}" type="text" name="numero" id="numero">
-            </label>
-            {{/each}}
-        </div>
-        <div id="Nombre"><br>
-            <label><b> Nombre Proyecto: </b></label>
-            <input type="text" name="nombreProyecto" id="nombre">
-        </div>
-        <div id="Descripcion"><br>
-            <label><b> Descripcion Proyecto:</b></label>
-            <input type="text" name="descripcionProyecto" id="descripcion">
-        </div>
-        <div id="Mision"><br>
-            <label><b>Mision Proyecto:</b></label>
-            <input type="text" name="misionProyecto" id="mision">
-        </div>
-        <div id="Vision"><br>
-            <label><b>Vision Proyecto:</b></label>
-            <input type="text" name="visionProyecto" id="vision">
-        </div>
-        <div id="objetivos"><br>
-            <label><b>Nº Objetivos Propuestos:</b></label>
-            <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked><b> (Ingrese hasta maximo 4 Objetivos)</b>
-        </div><br>
+            <div id="titulo">
+                {{#each idMax}}
+                <label><b>AGREGAR PROYECTO Nº</b>
+                    <input value="{{'max(id_proyecto)'}}" type="text" name="numero" id="numero">
+                </label>
+                {{/each}}
+            </div>
+            <div id="Nombre"><br>
+                <label><b> Nombre Proyecto: </b></label>
+                <input type="text" name="nombreProyecto" id="nombre">
+            </div>
+            <div id="Descripcion"><br>
+                <label><b> Descripcion Proyecto:</b></label>
+                <input type="text" name="descripcionProyecto" id="descripcion">
+            </div>
+            <div id="Mision"><br>
+                <label><b>Mision Proyecto:</b></label>
+                <input type="text" name="misionProyecto" id="mision">
+            </div>
+            <div id="Vision"><br>
+                <label><b>Vision Proyecto:</b></label>
+                <input type="text" name="visionProyecto" id="vision">
+            </div>
+            <div id="objetivos"><br>
+                <label><b>Nº Objetivos Propuestos:</b></label>
+                <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked><b> (Ingrese hasta
+                    maximo 4 Objetivos)</b>
+            </div><br>
 
-        <div id="listaObjetivos"></div>
+            <div id="listaObjetivos"></div>
 
-        <div> <br>
-            <button type="button" onclick="objetivos.crear()" id="crearObjeto"><b>Crear Objetivos</b></button>
-        </div>
+            <div> <br>
+                <button type="button" onclick="objetivos.crear()" id="crearObjeto"><b>Crear Objetivos</b></button>
+            </div>
 
-        <div>
-            <br>
-            <button type="submit" id="confirmar"><b> Guardar </b></button>
+            <div>
+                <br>
+                <button type="submit" id="confirmar"><b> Guardar </b></button>
+            </div>
         </div>
+    </form>
+
+    <div>
+        <a href="/"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
     </div>
-</form>
-
-<div>
-    <a href="/"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
-</div>
+</body>
 
 <script src="/js/numero.js"></script>
 <script src="/js/objetivo.js"></script>

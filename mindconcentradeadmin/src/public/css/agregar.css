@@ -1,30 +1,33 @@
 .nav-enlace{
     display: inline-block;
-    background: salmon;
+    background: #124e5e;
     color:#fff;
     padding: 10px 30px;
     text-decoration: none;
+    border-radius: 10px;
+    text-align: end;
 }
 .nav-enlace:hover{
-    background: rosybrown;
+    background: #addae5;
 }
 nav{
-    background: rebeccapurple;
+    background: linear-gradient(90deg,#a8d6e0, #135869 );
     padding: 10px;
     display: flex;
     justify-content: space-around; 
 }
 .nav-boton{
-    background: salmon;
+    background: #093846;
     color: #fff;
     padding: 10px 0;
     border: 2px solid #fff;
     display: none;
+    border-radius: 8px;
 }
 
 @media (max-width: 1024px) {
     nav{
-        background: black;
+        background: linear-gradient(90deg,#a8d6e0, #135869 );
         flex-direction: column;
     }
     .nav-enlace{
@@ -39,28 +42,21 @@ nav{
 }
 
 
-body::before {
-    content: " ";
-    width:100%;
-    min-height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+body {
+
     background: linear-gradient(90deg,#a8d6e0, #135869 );
-    opacity: 0.5;
-    z-index: -1;
 }
 
-#contenedor{
-    width: 75%;
-    background: linear-gradient(90deg,#4badc4, #055468 );
-    padding: 60px;
-   margin: auto;
-   margin-top: 110px;
-   border-radius: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color: black;
+#contenedor {
+    width: 45%;
+    background: linear-gradient(90deg, #4badc4, #055468);
+    padding: 120px;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 
  #confirmar{
