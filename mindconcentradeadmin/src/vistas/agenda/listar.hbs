@@ -1,45 +1,47 @@
 <link rel="stylesheet" href="/css/listar.css ">
 
-<form action="/agenda/lista/{{user.id_usuario}}" method="get">
+<body>
+    <form action="/agenda/lista/{{user.id_usuario}}" method="get">
 
-    <div class="controlador"><br>
-        <br>
+        <div class="controlador"><br>
+            <br>
 
-        <div id="contenedor">
+            <div id="contenedor">
 
-            {{#each lista}}
-            <div id="Nombre">
-                <label><b> {{nombreAgenda}} </b></label>
+                {{#each lista}}
+                <div id="Nombre">
+                    <label><b> {{nombreAgenda}} </b></label>
+                </div>
+
+                <div id="Descripcion">
+                    <label>{{descripcionAgenda}}</label>
+                </div>
+
+                <div id="Mision">
+                    <label>{{horaAgenda}}</label>
+                </div>
+
+                <div id="Vision">
+                    <label>{{fechaAgenda}}</label>
+                </div>
+
+                <div>
+                    <a href="/agenda/editar/{{id_agenda}}">
+                        <button type="button" id="editar">Editar</button>
+                    </a>
+                    <a href="/agenda/eliminar/{{id_agenda}}">
+                        <button type="button" id="eliminar">Eliminar</button>
+                    </a>
+                </div><br>
+                {{/each}}
+
             </div>
-
-            <div id="Descripcion">
-                <label>{{descripcionAgenda}}</label>
-            </div>
-
-            <div id="Mision">
-                <label>{{horaAgenda}}</label>
-            </div>
-
-            <div id="Vision">
-                <label>{{fechaAgenda}}</label>
-            </div>
-
-            <div>
-                <a href="/agenda/editar/{{id_agenda}}">
-                    <button type="button" id="editar">Editar</button>
-                </a>
-                <a href="/agenda/eliminar/{{id_agenda}}">
-                    <button type="button" id="eliminar">Eliminar</button>
-                </a>
-            </div><br>
-            {{/each}}
-
         </div>
+    </form>
     </div>
-</form>
-</div>
-<div id="agregar">
-    <a href="/agenda/agregar/{{user.id_usuario}}">
-        <button type="button" id="agregar"><b> AGREGAR ACTIVIDAD </b></button>
-    </a>
-</div>
+    <div id="agregar">
+        <a href="/agenda/agregar/{{user.id_usuario}}">
+            <button type="button" id="agregar"><b> AGREGAR ACTIVIDAD </b></button>
+        </a>
+    </div>
+</body>
