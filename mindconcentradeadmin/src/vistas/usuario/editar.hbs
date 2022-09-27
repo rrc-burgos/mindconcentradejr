@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/usuario/editar/{{id_usuario}}" method="post" >
+
+    <div class=" " id="contenedor">
+
+        <div id="titulo">
+            <h1>Editar</h1>
+        </div>
+        <br>
+        <div id="Nombre">
+            <label>Nombres:</label>
+            <input value="{{nombre}}" type="text" name="nombre" id="nombre">
+        </div>
+        <div id="Apellido">
+            <label>Apellidos:</label>
+            <input value="{{apellido}}" type="text" name="apellido" id="apellido">
+        </div>
+        <div id="Username">
+            <label>Username:</label>
+            <input value="{{username}}" type="text" name="username" id="username">
+        </div>
+        <div id="Password">
+            <label>Password:</label>
+            <input value="{{password}}" type="password" name="password" id="password">
+        </div>
+        {{/each}}
+        
+        <div id="guardar">
+            <button type="submit" id="actualizar">Actualizar</button>
+        </div>
+    </div>
+</form>

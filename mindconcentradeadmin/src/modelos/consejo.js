@@ -5,8 +5,8 @@ const consejo = (sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true
         },
-        nombreConsejo: type.STRING,
-        fechaConsejo: type.STRING, 
+        numeroConsejo: type.STRING,
+        descripcionConsejos: type.STRING,
  
         creacionConsejos:{
             type: 'TIMESTAMP',

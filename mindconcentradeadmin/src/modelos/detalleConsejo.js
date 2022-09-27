@@ -12,6 +12,7 @@ const detalleConsejo = (sequelize, type)=>{
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
+
         actualizacionDetalleConsejos:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP '),
