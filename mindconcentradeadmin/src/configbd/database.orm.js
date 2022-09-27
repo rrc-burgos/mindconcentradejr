@@ -94,8 +94,8 @@ permiso.belongsTo(usuario)
 cliente.hasMany(opinion)
 opinion.belongsTo(cliente)
 
-cliente.hasMany(consejo)
-consejo.belongsTo(cliente)
+usuario.hasMany(consejo)
+consejo.belongsTo(usuario)
 
 consejo.hasMany(detalleConsejo)
 detalleConsejo.belongsTo(consejo)

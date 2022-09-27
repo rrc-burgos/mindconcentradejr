@@ -69,5 +69,6 @@ app.use(require("./rutas/vida.rutas"))
 app.use("/pregunta",require("./rutas/pregunta.rutas"))
 app.use("/rol",require("./rutas/rol.rutas"))
 app.use("/usuario", require("./rutas/usuario.rutas"))
+app.use("/consejo", require("./rutas/consejo.rutas"))
 
 module.exports = app;
