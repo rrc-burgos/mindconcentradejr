@@ -73,6 +73,20 @@ body {
     align-items: center;
  }
 
+ #cancelar{
+
+    background: linear-gradient(90deg, #d18080, #b31010);
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    font-size: 25px;
+    color:black;
+
+}
+
  #permisos{
      
     outline: none;
