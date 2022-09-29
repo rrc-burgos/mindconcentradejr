@@ -11,7 +11,7 @@
     background: #addae5;
 }
 nav{
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
     padding: 10px;
     display: flex;
     justify-content: space-around; 
@@ -27,7 +27,7 @@ nav{
 
 @media (max-width: 1024px) {
     nav{
-        background: linear-gradient(90deg,#a8d6e0, #135869 );
+        background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
         flex-direction: column;
     }
     .nav-enlace{
@@ -50,7 +50,7 @@ nav{
 
 body {
 
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
 }
 
 

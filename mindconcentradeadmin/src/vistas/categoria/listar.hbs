@@ -15,20 +15,16 @@
             <div id="Descripcion">
                 <label>{{descripcionCategoria}}</label>
             </div>
-            
-            <div id="editar">
-            <a href="/categoria/editar/{{id_categoria}}">
-                <button type="button" id="editar" >Editar</button>
-            </a>
-            </div>
 
-            <div id="eliminar">
-            <a href="/categoria/eliminar/{{id_categoria}}">
-                <button type="button" id="eliminar" >Eliminar</button>
-            </a>
-            </div>            
+                <div>
+                    <a href="/categoria/editar/{{id_pregunta}}">
+                        <button type="button" id="editar">Editar</button>
+                    </a>
+                    <a href="/categoria/eliminar/{{id_pregunta}}">
+                        <button type="button" id="eliminar">Eliminar</button>
+                    </a>
+                </div><br>
 
-            <br>
 
             {{/each}}
             {{#each detalleLista}}
