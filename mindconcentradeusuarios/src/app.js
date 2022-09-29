@@ -73,4 +73,6 @@ app.use("/usuario", require("./rutas/usuario.rutas"))
 app.use("/consejo", require("./rutas/consejo.rutas"))
 app.use(require("./rutas/nosotros.rutas"))
 app.use(require("./rutas/actividades.rutas"))
+app.use("/pregunta",require("./rutas/apipreguntas.rutas"))
+
 module.exports = app;
