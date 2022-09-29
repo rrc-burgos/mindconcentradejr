@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/editar.css ">
+{{#each lista}}
+<form action="/consejo/editar/{{id_consejo}}" method="post" >
+
+    <div class=" " id="contenedor">
+
+        <div id="titulo">
+            <h1>Editar consejo</h1>
+        </div>
+        <br>
+        
+        <div id="numeroConsejo">
+            <label>Numero del consejo:</label>
+            <input value="{{numeroConsejo}}" type="text" name="numeroConsejo" id="numeroConsejo">
+        </div>
+        <div id="descripcionConsejos">
+            <label>Descripcion del consejo:</label>
+            <input value="{{descripcionConsejos}}" type="text" name="descripcionConsejos" id="descripcionConsejos">
+        </div>
+{{!--         <div id="fechaConsejo">
+            <label>Fecha del consejo:</label>
+            <input value="{{fechaConsejo}}" type="text" name="fechaConsejo" id="fechaConsejo">
+        </div> --}}
+        {{/each}}
+        
+        <div id="guardar">
+            <button type="submit" id="actualizar">Actualizar</button>
+        </div>
+    </div>
+</form>

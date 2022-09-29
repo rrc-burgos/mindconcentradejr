@@ -1,6 +1,10 @@
-
 #mensaje{
     position: absolute;
-    top: 13%;
-    left: 82%;
+    top: 10%;
+    left: 10%;
+    border-radius: 5%;
+    background: linear-gradient(90deg,#a9adc2, #84acf7 );
+    text-align: justify;
+
 }
+
