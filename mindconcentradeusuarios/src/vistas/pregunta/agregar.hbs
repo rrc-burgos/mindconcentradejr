@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/agregar.css ">
+
+<body>
+
+    <form action="/pregunta/agregar/" method="post" id="contenedor">
+        <div class="controlador"><br>
+            <div id="titulo">
+                {{#each idMax}}
+                <label><b>AGREGAR PREGUNTA Nº</b>
+                    <input value="{{'max(id_pregunta)'}}" type="text" name="numero" id="numero">
+                </label>
+                {{/each}}
+            </div>
+            <div id="Numeroi"><br>
+                <label><b> Numero de Pregunta: </b></label>
+                <input type="text" name="numeroPregunta" id="numeroi">
+            </div>
+            <div id="Preguntai"><br>
+                <label><b> Pregunta:</b></label>
+                <input type="text" name="pregunta" id="preguntai">
+            </div>
+            <div id="Observacioni"><br>
+                <label><b>Observacion de pregunta</b></label>
+                <input type="text" name="misionProyecto" id="observacioni">
+            </div>
+            <div id="Estadoi"><br>
+                <label><b>Estado de Pregunta</b></label>
+                <input type="text" name="estado" id="estadoi">
+            </div>
+
+            <div>
+                <br>
+                <button type="submit" id="confirmar"><b> Guardar </b></button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <a href="/"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
+    </div>
+</body>
+
+<script src="/js/numero.js"></script>

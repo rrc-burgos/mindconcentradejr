@@ -1,45 +1,33 @@
-
-body::before {
-    content: "";
-    width:100%;
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
-    opacity: 0.5;
-    z-index: -1;
-}
-
-
 .nav-enlace{
     display: inline-block;
+    background: #124e5e;
     color:#fff;
     padding: 10px 30px;
     text-decoration: none;
+    border-radius: 10px;
+    text-align: end;
 }
 .nav-enlace:hover{
-
-        color: #01131f;
+    background: #addae5;
 }
-
 nav{
-    background: linear-gradient(90deg,#b0d7e0, #135869 );
+    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
     padding: 10px;
     display: flex;
     justify-content: space-around; 
 }
 .nav-boton{
-    background: salmon;
+    background: #093846;
     color: #fff;
     padding: 10px 0;
     border: 2px solid #fff;
     display: none;
+    border-radius: 8px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
     nav{
-        background: black;
+        background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
         flex-direction: column;
     }
     .nav-enlace{
@@ -51,7 +39,26 @@ nav{
     .desaparece{
         display: none;
     }
+    .container{
+
+        display: inline-block;
+    }
 }
+
+#logo{
+	width: 100px;
+	border-radius: 100%;
+    position: absolute;
+    left: 3%;
+}
+
+body {
+
+    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
+}
+
+
+
 
 .container{
     position: absolute;

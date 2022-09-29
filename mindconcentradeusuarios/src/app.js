@@ -28,7 +28,7 @@ app.set('view engine', '.hbs');
 
 
 //midlewars
-app.use(morgan('dev'));
+app.use(morgan('dev')); //renderizar los datos
 app.use(bodyparser.urlencoded({
     extended: false
 }));
@@ -66,7 +66,11 @@ app.use("/proyecto",require("./rutas/proyecto.rutas"))
 app.use(require("./rutas/problemas.rutas"))
 app.use("/agenda",require("./rutas/agenda.rutas"))
 app.use(require("./rutas/vida.rutas")) 
-
-
+app.use("/pregunta",require("./rutas/pregunta.rutas"))
+app.use("/rol",require("./rutas/rol.rutas"))
+app.use("/categoria",require("./rutas/categoria.rutas"))
+app.use("/usuario", require("./rutas/usuario.rutas"))
+app.use("/consejo", require("./rutas/consejo.rutas"))
+app.use(require("./rutas/nosotros.rutas"))
+app.use(require("./rutas/actividades.rutas"))
 module.exports = app;
-

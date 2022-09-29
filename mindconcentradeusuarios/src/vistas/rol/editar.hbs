@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/editar.css ">
+
+<body>
+    {{#each lista}}
+    <form action="/rol/editar/{{id_rol}}" method="post">
+
+        <div id="contenedor">
+
+            <div id="titulo">
+                <h1>Editar datos de Rol</h1>
+                <br>
+            </div>
+            <div id="Nombre">
+                <label>Nombre:</label>
+                <input value="{{nombreRol}}" type="text" name="nombreRol" id="nombre">
+            </div>
+            <div id="Descripcion">
+                <label>Descripcion:</label>
+                <input value="{{descripcionRol}}" type="text" name="descripcionRol" id="descripcion">
+            </div>
+            <br><br>
+            {{/each}}
+
+            <div id="guardar">
+                <button type="submit" id="actualizar">Actualizar</button>
+
+            </div>
+            <br>
+            <div>
+                <a href="/permiso/">
+                    <button type="button" id="permisos"><b> Permisos </b></button>
+                </a>
+            </div>
+            <br><br>
+        </div>
+    </form>
+</body>
