@@ -9,30 +9,35 @@
             <div id="contenedor">
 
                 {{#each lista}}
-                <div id="Nombre">
-                    <label><b> {{nombreAgenda}} </b></label>
-                </div>
+                <div class="row">
+                    <div class="column" id="lab">
+                        <div id="Nombre">
+                            <label><b> {{nombreAgenda}} </b></label>
+                        </div>
 
-                <div id="Descripcion">
-                    <label>{{descripcionAgenda}}</label>
-                </div>
+                        <div id="Descripcion">
+                            <label>{{descripcionAgenda}}</label>
+                        </div>
 
-                <div id="Mision">
-                    <label>{{horaAgenda}}</label>
-                </div>
+                        <div id="Mision">
+                            <label>{{horaAgenda}}</label>
+                        </div>
 
-                <div id="Vision">
-                    <label>{{fechaAgenda}}</label>
-                </div>
+                        <div id="Vision">
+                            <label>{{fechaAgenda}}</label>
+                        </div>
+                    </div>
 
-                <div>
-                    <a href="/agenda/editar/{{id_agenda}}">
-                        <button type="button" id="editar">Editar</button>
-                    </a>
-                    <a href="/agenda/eliminar/{{id_agenda}}">
-                        <button type="button" id="eliminar">Eliminar</button>
-                    </a>
-                </div><br>
+                    <div class="column" id="butt">
+                        <a href="/agenda/editar/{{id_agenda}}">
+                            <button type="button" id="editar">Editar</button>
+                        </a>
+                        <a href="/agenda/eliminar/{{id_agenda}}">
+                            <button type="button" id="eliminar">Eliminar</button>
+                        </a>
+                    </div>
+                </div>
+                <br>
                 {{/each}}
 
             </div>

@@ -8,34 +8,40 @@
         <div id="contenedor">
 
             {{#each lista}}
-            <div id="Nombre">
-                <label>Nombres:<b> {{nombre}} </b></label>
+            <div class="row">
+                <div class="column" id="lab">
+                    <div id="Nombre">
+                        <label>Nombres:<b> {{nombre}} </b></label>
+                    </div>
+
+                    <div id="Apellido">
+                        <label>Apellidos:{{apellido}}</label>
+                    </div>
+
+                    <div id="username">
+                        <label>Username:{{username}}</label>
+                    </div>
+
+                    <div id="password">
+                        <label type="hidden">Password:{{password}}</label>
+                    </div>
+
+                    <div id="estado">
+                        <label>Estado: {{estado}}</label>
+                    </div>
+                </div>
+
+                <div class="column" id="butt">
+                    <a href="/usuario/editar/{{id_usuario}}">
+                        <button type="button" id="editar">Editar</button>
+                    </a>
+                </div>
             </div>
-
-            <div id="Apellido">
-                <label>Apellidos:{{apellido}}</label>
-            </div>
-
-            <div id="username">
-                <label>Username:{{username}}</label>
-            </div>
-
-            <div id="password">
-                <label>Password:{{password}}</label>
-            </div>
-
-            <div id="estado">
-                <label>Estado: {{estado}}</label>
-            </div>
-
-            <div>
-                <a href="/usuario/editar/{{id_usuario}}">
-                    <button type="button" id="editar">Editar</button>
-                </a>
-            </div><br>
-            {{/each}}
-
         </div>
+        <br>
+        {{/each}}
+
+    </div>
     </div>
 </form>
 </div>

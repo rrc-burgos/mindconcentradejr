@@ -63,11 +63,12 @@ button{
 }
 
 #contenedor {
-    width: 45%;
+    position: relative;
+    width: 50%;
     background: linear-gradient(90deg, #4badc4, #055468);
-    padding: 120px;
+    padding: 2% 5% 3% 5%;
     margin: auto;
-    margin-top: 110px;
+    margin-top: 3%;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -81,7 +82,7 @@ button{
     border-radius: 5%;
     color: black;
     background: linear-gradient(90deg, #dae0a8, #e0dd11);
-    align-items: center;
+    padding: 2px;
 }
 
 #eliminar {
@@ -94,6 +95,7 @@ button{
     color: black;
     background: linear-gradient(90deg, #d18080, #b31010);
     align-items: center;
+    margin-left: 8px;
 }
 
 #agregar {
@@ -102,9 +104,26 @@ button{
     cursor: pointer;
     border-radius: 8%;
     position: absolute;
-    top: 24%;
-    left: 76%;
+    bottom: 33%;
+    left: 77%;
     font-size: 25px;
     color: black;
 
+}
+
+#butt {
+    border: none;
+    cursor: pointer;
+    border-radius: 8%;
+    position: absolute;
+    right: 11%;
+}
+#lab {
+    margin-left: 10%;
+}
+#password {
+    width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

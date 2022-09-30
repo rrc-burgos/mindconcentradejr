@@ -14,24 +14,25 @@
 
     <form action="/registro" method="post">
         <div class="container">
+     
             <img class="img2" src="/img/login2.png" alt="">
 
             <div id="titulo">
                 <h2><b>Registrate</b></h2>
             </div>
-
+<div id="labels">
             <div id="usuario">
                 <label for=""><b>Nombre de usuario</b></label>
                 <input type="text" name="username" id="username" checked>
             </div>
 
             <div id="contraseña">
-                <label for=""><b>contraseña de usuario</b></label>
+                <label for=""><b>Contraseña de usuario</b></label>
                 <input type="password" name="password" id="password" checked>
             </div>
-
+</div>
             <div class="registro">
-                <h2>¿Ya tienes cuenta?
+                <h2 id="registro">¿Ya tienes cuenta?
                     <a class="link" href="/login">Inicia Sesion</a>
                 </h2>
             </div>
@@ -43,8 +44,9 @@
     </form>
 
     <footer class="second-footer">
-        <p>
+        <p id="mind">
             &copy; <a href="/">MindConcentrade.com - 2022</a>
         </p>
     </footer>
 </body>
+

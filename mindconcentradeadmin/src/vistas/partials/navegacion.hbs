@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/navegacion.css">
 </head>
 <body>
+  <div id="fondo">
     <nav>
         {{#if user}}
         <button class="nav-boton" onclick="accion()"><b>Menú</b></button>
@@ -15,12 +16,13 @@
         <a href="/rol/lista/{{user.id_usuario}}"><b>Roles</b></a>
         <a href="/usuario/listar/{{user.id_usuario}}"><b>Usuario</b></a>
         <a href="/agenda/lista/{{user.id_usuario}}"><b>Agenda</b></a>
-        <a href="/proyecto/agregar"><b>Proyecto</b></a>
+        <a href="/proyecto/lista/{{user.id_usuario}}"><b>Proyecto</b></a>
         <a href="/pregunta/lista/{{user.id_usuario}}"><b>Preguntas</b></a>
         <a href="/categoria/lista/{{user.id_usuario}}"><b>Categorias</b></a>
         <a href="/cerrar"><b>Cierre Sesión<b></a>
         {{/if}}
       </nav>
+    </div>
       
       <script>
         function accion() {
