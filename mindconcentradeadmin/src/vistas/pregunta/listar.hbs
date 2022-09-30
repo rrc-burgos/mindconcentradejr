@@ -9,30 +9,34 @@
             <div class="datos">
 
                 {{#each lista}}
-                <div id="Numero">
-                    <label><b> {{numeroPregunta}} </b></label>
-                </div>
+                <div class="row">
+                    <div class="column" id="lab">
+                        <div id="Numero">
+                            <label><b> {{numeroPregunta}} </b></label>
+                        </div>
 
-                <div id="Pregunta">
-                    <label>{{pregunta}}</label>
-                </div>
+                        <div id="Pregunta">
+                            <label>{{pregunta}}</label>
+                        </div>
 
-                <div id="Observacion">
-                    <label>{{observacion}}</label>
-                </div>
+                        <div id="Observacion">
+                            <label>{{observacion}}</label>
+                        </div>
 
-                <div id="Estado">
-                    <label>{{estado}}</label>
+                        <div id="Estado">
+                            <label>{{estado}}</label>
+                        </div>
+                    </div>
+                    <div class="column" id="butt">
+                        <a href="/pregunta/editar/{{id_pregunta}}">
+                            <button type="button" id="editar">Editar</button>
+                        </a>
+                        <a href="/pregunta/eliminar/{{id_pregunta}}">
+                            <button type="button" id="eliminar">Eliminar</button>
+                        </a>
+                    </div>
                 </div>
-
-                <div>
-                    <a href="/pregunta/editar/{{id_pregunta}}">
-                        <button type="button" id="editar">Editar</button>
-                    </a>
-                    <a href="/pregunta/eliminar/{{id_pregunta}}">
-                        <button type="button" id="eliminar">Eliminar</button>
-                    </a>
-                </div><br>
+                <br>
 
                 <br>
 

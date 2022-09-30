@@ -7,24 +7,27 @@
 
         <div class="datos">
 
-            {{#each lista}} 
-            <div id="Nombre">
-                <label><b> {{nombreCategoria}} </b></label>
-            </div>
+            {{#each lista}}
+            <div class="row">
+                <div class="column" id="lab">
+                    <div id="Nombre">
+                        <label><b> {{nombreCategoria}} </b></label>
+                    </div>
 
-            <div id="Descripcion">
-                <label>{{descripcionCategoria}}</label>
-            </div>
-
-                <div>
-                    <a href="/categoria/editar/{{id_pregunta}}">
+                    <div id="Descripcion">
+                        <label>{{descripcionCategoria}}</label>
+                    </div>
+                </div>
+                <div class="column" id="butt">
+                    <a href="/categoria/editar/{{id_categoria}}">
                         <button type="button" id="editar">Editar</button>
                     </a>
-                    <a href="/categoria/eliminar/{{id_pregunta}}">
+                    <a href="/categoria/eliminar/{{id_categoria}}">
                         <button type="button" id="eliminar">Eliminar</button>
                     </a>
-                </div><br>
-
+                </div>
+            </div>
+            <br>
 
             {{/each}}
             {{#each detalleLista}}
@@ -35,6 +38,6 @@
 </div>
 <div id="agregar">
     <a href="/categoria/agregar">
-    <button type="button" id="agregar"><b> AGREGAR + </b></button>
+        <button type="button" id="agregar"><b> AGREGAR + </b></button>
     </a>
 </div>

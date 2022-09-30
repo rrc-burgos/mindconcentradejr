@@ -9,41 +9,52 @@
             <div class="datos">
 
                 {{#each lista}}
-                <div id="Nombre">
-                    <label><b> {{nombreProyecto}} </b></label>
+                <div class="row">
+                    <div class="column" id="lab">
+                        <div id="Nombre">
+                            <label><b> {{nombreProyecto}} </b></label>
+                        </div>
+
+                        <div id="Descripcion">
+                            <label>{{descripcionProyecto}}</label>
+                        </div>
+
+                        <div id="Mision">
+                            <label>{{misionProyecto}}</label>
+                        </div>
+
+                        <div id="Vision">
+                            <label>{{visionProyecto}}</label>
+                        </div>
+                    </div>
+                    <div class="column" id="butt">
+                        <a href="/proyecto/editar/{{id_proyecto}}">
+                            <button type="button" id="editar">Editar</button>
+                        </a>
+                        <a href="/proyecto/eliminar/{{id_proyecto}}">
+                            <button type="button" id="eliminar">Eliminar</button>
+                        </a>
+                    </div>
                 </div>
-
-                <div id="Descripcion">
-                    <label>{{descripcionProyecto}}</label>
-                </div>
-
-                <div id="Mision">
-                    <label>{{misionProyecto}}</label>
-                </div>
-
-                <div id="Vision">
-                    <label>{{visionProyecto}}</label>
-                </div>
-                
-                <div>
-                    <a href="/proyecto/editar/{{id_proyecto}}">
-                        <button type="button" id="editar">Editar</button>
-                    </a>
-                    <a href="/proyecto/eliminar/{{id_proyecto}}">
-                        <button type="button" id="eliminar">Eliminar</button>
-                    </a>
-                </div><br>
-
-                {{/each}}
-                {{#each detalleLista}}
-
-                <div id="Objetivos">
-                    <label>{{objetivosProyecto}}</label>
-                </div>
-                {{/each}}
-
             </div>
+            <br>
+
+            {{/each}}
+            {{#each detalleLista}}
+
+            <div class="column" id="Objetivos">
+                <label>{{objetivosProyecto}}</label>
+            </div>
+            {{/each}}
+
+        </div>
         </div>
     </form>
     </div>
 </body>
+
+<div id="agregar">
+    <a href="/proyecto/agregar">
+        <button type="button" id="agregar"><b> AGREGAR + </b></button>
+    </a>
+</div>
