@@ -1,22 +1,35 @@
-
-{{#if user}}
-
-<nav>
-  <div id="nav1">
-    <a href="/problemas">Consejos</a>
-  </div>
-  <div id="nav2">
-    <a href="/vida"> Vida sana</a>
-  </div>
-  <div id="nav3">
-    <a href="/agenda/lista/{{user.id_usuario}}"> Agenda </a>
-  </div>
-   <div id="nav4">
-    <a href="/proyecto/agregar">Proyecto</a>
-  </div>
-  <div id="nav5">
-    <a href="/cerrar">Cierre Sesión</a>
-  </div>
-</nav>
-{{/if}}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/navegacion.css">
+</head>
+<body>
+    <nav>
+        {{#if user}}
+        <button class="nav-boton" onclick="accion()"><b>Menú</b></button>
+        <a href="/problemas"><b>Consejos</b></a>
+        <a href="/rol/lista/{{user.id_usuario}}"><b>Roles</b></a>
+        <a href="/usuario/listar/{{user.id_usuario}}"><b>Usuario</b></a>
+        <a href="/agenda/lista/{{user.id_usuario}}"><b>Agenda</b></a>
+        <a href="/proyecto/agregar"><b>Proyecto</b></a>
+        <a href="/pregunta/lista/{{user.id_usuario}}"><b>Preguntas</b></a>
+        <a href="/categoria/agregar/"><b>Categorias</b></a>
+        <a href="/cerrar"><b>Cierre Sesión<b></a>
+        {{/if}}
+      </nav>
+      
+      <script>
+        function accion() {
+          console.log('está funcionando mi boton');
+          var ancla = document.getElementsByClassName('nav-enlace');
+          for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle('desaparece');
+          }
+        }
+      </script>
+</body>
+</html>

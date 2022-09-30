@@ -22,7 +22,7 @@ passport.use(
           user.password
         );
         if (validPassword) {
-          done(null, user, req.flash("message", "Hola" + " " + user.username + " Bienvenido"));
+          done(null, user, req.flash("message", "  Bienvenido a Mindconcentrade  " + "  " + user.username));
         } else {
           done(null, false, req.flash("message", "Datos incorrecta"));
         }

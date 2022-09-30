@@ -23,7 +23,12 @@ const actividadesModelos = require ("../modelos/actividades")
 const agendaModelos = require ("../modelos/agenda")
 const proyectoModelos = require ("../modelos/proyecto")
 const detalleProyectoModelo = require ("../modelos/detalleProyecto");
-
+const preguntaModelos = require ("../modelos/pregunta")
+const detallePreguntaModelos = require ("../modelos/detallePregunta")
+const rolModelos = require ("../modelos/rol")
+const permisoModelos = require ("../modelos/permiso")
+const categoriaModelos = require ("../modelos/categoria")
+const detalleCategoriaModelo = require ("../modelos/detalleCategoria");
 
 
 
@@ -65,6 +70,12 @@ const actividades = actividadesModelos(sequelize, Sequelize)
 const agenda = agendaModelos(sequelize, Sequelize)
 const proyecto = proyectoModelos(sequelize, Sequelize)
 const detalleProyecto = detalleProyectoModelo(sequelize, Sequelize)
+const pregunta = preguntaModelos(sequelize, Sequelize)
+const detallePregunta = detallePreguntaModelos(sequelize, Sequelize)
+const rol = rolModelos(sequelize, Sequelize)
+const permiso = permisoModelos(sequelize, Sequelize)
+const categoria = categoriaModelos(sequelize, Sequelize)
+const detalleCategoria = detalleCategoriaModelo(sequelize, Sequelize)
 
 usuario.hasMany(actividades)
 actividades.belongsTo(usuario)
@@ -78,14 +89,33 @@ detalleProyecto.belongsTo(proyecto)
 usuario.hasMany(agenda)
 agenda.belongsTo(usuario)
 
+usuario.hasMany(rol)
+rol.belongsTo(usuario)
+
+usuario.hasMany(permiso)
+permiso.belongsTo(usuario)
+
 cliente.hasMany(opinion)
 opinion.belongsTo(cliente)
 
-cliente.hasMany(consejo)
-consejo.belongsTo(cliente)
+usuario.hasMany(consejo)
+consejo.belongsTo(usuario)
 
 consejo.hasMany(detalleConsejo)
 detalleConsejo.belongsTo(consejo)
+
+usuario.hasMany(pregunta)
+pregunta.belongsTo(usuario)
+
+pregunta.hasMany(detallePregunta)
+detallePregunta.belongsTo(pregunta)
+
+usuario.hasMany(categoria)
+categoria.belongsTo(usuario)
+
+categoria.hasMany(detalleCategoria)
+detalleCategoria.belongsTo(categoria)
+
 
 
 
@@ -98,5 +128,13 @@ module.exports = {
   actividades,
   agenda,
   proyecto,
-  detalleProyecto
+  detalleProyecto,
+  pregunta,
+  detallePregunta,  
+  rol,
+  permiso,
+  proyecto,
+  detalleProyecto,
+  categoria,
+  detalleCategoria
 }

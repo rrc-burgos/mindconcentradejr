@@ -1,33 +1,38 @@
 <link rel="stylesheet" href="/css/editar.css ">
-{{#each lista}}
-<form action="/agenda/editar/{{id_agenda}}" method="post" >
 
-    <div id="contenedor">
-        
-        <div id="titulo">
-            <h1>Editar datos de la Agenda</h1>
+<body>
+    {{#each lista}}
+    <form action="/agenda/editar/{{id_agenda}}" method="post">
+
+        <div id="contenedor">
+
+            <div id="titulo">
+                <h1>Editar datos de la Agenda</h1>
+                <br>
+            </div>
+            <div id="Nombre">
+                <label>Nombre Proyecto:</label>
+                <input value="{{nombreAgenda}}" type="text" name="nombreAgenda" id="nombre">
+            </div>
+            <div id="Descripcion">
+                <label>Descripcion Proyecto:</label>
+                <input value="{{descripcionAgenda}}" type="text" name="descripcionAgenda" id="descripcion">
+            </div>
+            <div id="Mision">
+                <label>Hora de la Agenda:</label>
+                <input value="{{horaAgenda}}" type="text" name="horaAgenda" id="hora">
+            </div>
+            <div id="Vision">
+                <label>Fecha de la Agenda:</label>
+                <input value="{{fechaAgenda}}" type="text" name="fechaAgenda" id="fecha">
+            </div>
+            <br><br>
+            {{/each}}
+
+            <div id="guardar">
+                <button type="submit" id="actualizar">Actualizar</button>
+            </div>
             <br>
         </div>
-        <div id="Nombre">
-            <label>Nombre Proyecto:</label>
-            <input value="{{nombreAgenda}}" type="text" name="nombreAgenda" id="nombre">
-        </div>
-        <div id="Descripcion">
-            <label>Descripcion Proyecto:</label>
-            <input value="{{descripcionAgenda}}" type="text" name="descripcionAgenda" id="descripcion">
-        </div>
-        <div id="Mision">
-            <label>Hora de la Agenda:</label>
-            <input value="{{horaAgenda}}" type="text" name="horaAgenda" id="hora">
-        </div>
-        <div id="Vision">
-            <label>Fecha de la Agenda:</label>
-            <input value="{{fechaAgenda}}" type="text" name="fechaAgenda" id="fecha">
-        </div> <br><br>
-        {{/each}}
-        
-        <div id="guardar">
-            <button type="submit" id="actualizar" >Actualizar</button>
-        </div>
-    </div>
-</form>
+    </form>
+</body>

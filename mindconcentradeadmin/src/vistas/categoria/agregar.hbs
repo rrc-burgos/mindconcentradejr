@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/agregar.css ">
+
+<form action="/categoria/agregar/" method="post" id="contenedor">
+    <div class="controlador"><br>
+        <div id="titulo">
+            {{#each idMax}}
+            <label><b>AGREGAR CATEGORIA</b></label>
+            {{/each}}
+        </div>
+
+        <div id="Nombre"><br>
+            <label><b> Nombre de la Categoría: </b></label>
+            <input type="text" name="nombreCategoria" id="nombre">
+        </div>
+
+        <div id="Descripcion"><br>
+            <label><b> Descripcion de la Categoría:</b></label>
+            <input type="text" name="descripcionCategoria" id="descripcion">
+        </div>
+       
+
+        <div>
+            <br>
+            <button type="submit" id="confirmar"><b> Guardar </b></button>
+        </div>
+    </div>
+</form>
+
+<div >
+ <a href="lista/{{user.id_usuario}}"> <button type="buttom" id="cancelar"><b>  Cancelar </b></button></a>
+</div>

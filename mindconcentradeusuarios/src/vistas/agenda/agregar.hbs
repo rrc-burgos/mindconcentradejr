@@ -1,36 +1,38 @@
 <link rel="stylesheet" href="/css/agregar.css ">
 
-<form action="/agenda/agregar/{{user.id_usuario}}" method="post" >
+<body>
+    <form action="/agenda/agregar/{{user.id_usuario}}" method="post">
 
-    <div class=" " id="contenedor"><br>
+        <div class=" " id="contenedor"><br>
 
-        <div id="titulo">
-            <label><b>AGREGAR A TU AGENDA</b></label>
-        </div>
+            <div id="titulo">
+                <label><b>AGREGAR ACTIVIDAD A LA AGENDA</b></label>
+            </div>
 
-        <div id="Nombre"><br>
-            <label><b> Nombre de Agenda: </b></label>
-            <input type="text" name="nombreAgenda" id="nombre">
+            <div id="Nombre"><br>
+                <label><b> Nombre de Agenda: </b></label>
+                <input type="text" name="nombreAgenda" id="nombre">
+            </div>
+            <div id="Descripcion"><br>
+                <label><b> Descripcion de Agenda:</b></label>
+                <input type="text" name="descripcionAgenda" id="descripcion">
+            </div>
+            <div id="Mision"><br>
+                <label><b>Hora de la agenda:</b></label>
+                <input type="text" name="horaAgenda" id="hora">
+            </div>
+            <div id="Vision"><br>
+                <label><b>Fecha de la Agenda:</b></label>
+                <input type="text" name="fechaAgenda" id="fecha">
+            </div>
+            <br><br>
+            <div><br>
+                <button type="submit" id="confirmar"><b> Guardar </b></button>
+
+            </div>
         </div>
-        <div id="Descripcion"><br>
-            <label><b> Descripcion de Agenda:</b></label>
-            <input type="text" name="descripcionAgenda" id="descripcion">
-        </div>
-        <div id="Mision"><br>
-            <label><b>Hora de la agenda:</b></label>
-            <input type="text" name="horaAgenda" id="hora">
-        </div>
-        <div id="Vision"><br>
-            <label><b>Fecha de la Agenda:</b></label>
-            <input type="text" name="fechaAgenda" id="fecha">
-        </div>
-        
-        <div ><br>
-            <button type="submit" id="confirmar" ><b> Guardar </b></button>
-          
-        </div>
+    </form>
+    <div>
+        <a href="/agenda/lista/{{user.id_usuario}}"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
     </div>
-</form>
-<div>
- <a href="/agenda/lista/{{user.id_usuario}}"> <button type="buttom"  id="cancelar"><b>  Cancelar </b></button></a>
-</div>
+</body>

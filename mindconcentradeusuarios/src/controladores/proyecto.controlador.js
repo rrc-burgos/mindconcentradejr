@@ -64,6 +64,15 @@ proyectoctl.actualizar = async(req,res) =>{
     res.redirect("/proyecto/lista/"+id)
 }
 
+proyectoctl.eliminar = async(req, res) => {
+    const id = req.user.id_usuario
+    const ids = req.params.id
+    await orm.proyecto.destroy({where:{id_proyecto:ids}})
+
+    req.flash("success","Exito al Eliminar")
+    res.redirect("/proyecto/lista/"+id)
+}
+
 proyectoctl.cerrarSesion = (req, res, next) => {
 
     req.logOut()
