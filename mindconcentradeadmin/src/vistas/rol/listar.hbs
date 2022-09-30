@@ -1,45 +1,43 @@
 <link rel="stylesheet" href="/css/listar.css ">
 
-<body>
-    <form action="/rol/lista/{{user.id_usuario}}" method="get">
+<form action="/rol/lista/{{user.id_usuario}}" method="get">
 
-        <div class="controlador"><br>
-            <br>
+    <div id="contenedor"><br>
+        <br>
 
-            <div id="contenedor">
+        <div class="datos">
 
-                {{#each lista}}
-                <div class="row">
-                    <div class="column" id="lab">
-                        <div id="Nombre">
-                            <label> {{nombreRol}} </label>
-                        </div>
-
-                        <div id="Descripcion">
-                            </button> <label>{{descripcionRol}}</label>
-                        </div>
+            {{#each lista}}
+            <div class="row">
+                <div class="column" id="lab">
+                    <div id="Nombre">
+                        <label><b> {{nombreRol}} </b></label>
                     </div>
-                    <br>
-                    <div class="column" id="butt">
-                        <a href="/rol/editar/{{id_rol}}">
-                            <button type="button" id="editar">Editar</button>
-                        </a>
-                        <a href="/rol/eliminar/{{id_rol}}">
-                            <button type="button" id="eliminar">Eliminar</button>
-                        </a>
+
+                    <div id="Descripcion">
+                        <label>{{descripcionRol}}</label>
                     </div>
+                </div>
+                <div class="column" id="butt">
+                    <a href="/rol/editar/{{id_rol}}">
+                        <button type="button" id="editar">Editar</button>
+                    </a>
+                    <a href="/rol/eliminar/{{id_rol}}">
+                        <button type="button" id="eliminar">Eliminar</button>
+                    </a>
                 </div>
             </div>
             <br>
+
             {{/each}}
-
+            {{#each detalleLista}}
+            {{/each}}
         </div>
-        <div id="agregar">
-            <a href="/rol/agregar/{{user.id_usuario}}">
-                <button type="button" id="agregar"><b>AGREGAR ROLES</b></button>
-            </a>
-        </div>
-        </div>
-
-    </form>
-</body>
+    </div>
+</form>
+</div>
+<div id="agregar">
+    <a href="/rol/agregar/{{user.id_usuario}}">
+        <button type="button" id="agregar"><b> AGREGAR + </b></button>
+    </a>
+</div>
