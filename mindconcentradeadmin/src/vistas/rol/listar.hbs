@@ -9,31 +9,36 @@
             <div id="contenedor">
 
                 {{#each lista}}
-                <div id="Nombre">
-                    <button type="button"> Nombre</button> <label><b> {{nombreRol}} </b></label>
-                </div>
+                <div class="row">
+                    <div class="column" id="lab">
+                        <div id="Nombre">
+                            <label> {{nombreRol}} </label>
+                        </div>
 
-                <div id="Descripcion">
-                    <button type="button"> Descripcion</button> <label>{{descripcionRol}}</label>
+                        <div id="Descripcion">
+                            </button> <label>{{descripcionRol}}</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="column" id="butt">
+                        <a href="/rol/editar/{{id_rol}}">
+                            <button type="button" id="editar">Editar</button>
+                        </a>
+                        <a href="/rol/eliminar/{{id_rol}}">
+                            <button type="button" id="eliminar">Eliminar</button>
+                        </a>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <a href="/rol/editar/{{id_rol}}">
-                        <button type="button" id="editar">Editar</button>
-                    </a>
-                    <a href="/rol/eliminar/{{id_rol}}">
-                        <button type="button" id="eliminar">Eliminar</button>
-                    </a>
-                </div>
-                <br>
-                {{/each}}
+            </div>
+            <br>
+            {{/each}}
 
-            </div>
-            <div id="agregar">
-                <a href="/rol/agregar/{{user.id_usuario}}">
-                    <button type="button" id="agregar"><b> AGREGAR ROLES </b></button>
-                </a>
-            </div>
+        </div>
+        <div id="agregar">
+            <a href="/rol/agregar/{{user.id_usuario}}">
+                <button type="button" id="agregar"><b>AGREGAR ROLES</b></button>
+            </a>
+        </div>
         </div>
 
     </form>
