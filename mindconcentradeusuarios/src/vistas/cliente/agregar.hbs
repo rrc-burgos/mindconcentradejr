@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/css/agregar.css " />
+
+  <form action="/cliente/agregar/1" method="post">
+    <div  id="contenedor">
+      <div id="titulo">
+        <h1>Agregar sus Datos</h1>
+      </div>
+      <br />
+      <div id="nombreCliente">
+        <label>Nombre:</label>
+        <input
+          type="text"
+          name="nombreCliente"
+          id="nombreCliente"
+        />
+      </div>
+      <div id="apellidoCliente">
+        <label>Apellido:</label>
+        <input
+          type="text"
+          name="apellidoCliente"
+          id="apellidoCliente"
+        />
+      </div>
+      <div id="cedulaCliente">
+        <label>Cedula:</label>
+        <input        
+          type="text"
+          name="cedulaCliente"
+          id="cedulaCliente"
+        />
+      </div>
+      <div id="direccionCliente">
+        <label>Direccion:</label>
+        <input
+          type="text"
+          name="direccionCliente"
+          id="direccionCliente"
+        />
+      </div>      
+      <div id="celularCliente">
+        <label>Celular:</label>
+        <input
+          type="text"
+          name="celularCliente"
+          id="celularCliente"
+        />
+      </div>
+      <div id="username">
+        <label>Nick:</label>
+        <input  
+        type="text" 
+        name="username" 
+        id="username" 
+        />
+      </div>
+      <div id="hobbieCliente">
+        <label>Hobbie:</label>
+        <input
+          type="text"
+          name="hobbieCliente"
+          id="hobbieCliente"
+        />
+      </div>
+
+      <div id="guardar">
+        <button type="submit" id="confirmar"><b> Guardar </b></button>
+      </div>
+      <div>
+        <a href="/cliente/lista/{{user.id_cliente}}">
+          <button type="buttom" id="cancelar"><b> Cancelar </b></button></a
+        >
+      </div>
+    </div>
+  </form>

@@ -11,7 +11,7 @@ const cliente = (sequelize, type)=>{
         direccionCliente: type.STRING,
         CelularCliente: type.INTEGER(10),
         username: type.STRING(99),
-        password: type.STRING, 
+        hobbieCliente: type.STRING, 
         creacionClientes:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
