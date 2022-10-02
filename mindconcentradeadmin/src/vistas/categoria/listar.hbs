@@ -5,11 +5,11 @@
     <div id="contenedor"><br>
         <br>
 
-        <div class="datos">
+        <div id="datos">
 
             {{#each lista}}
             <div class="row">
-                <div class="column" id="lab">
+                <div id="column" id="lab">
                     <div id="Nombre">
                         <label><b> {{nombreCategoria}} </b></label>
                     </div>
@@ -18,7 +18,7 @@
                         <label>{{descripcionCategoria}}</label>
                     </div>
                 </div>
-                <div class="column" id="butt">
+                <div id="column" id="butt">
                     <a href="/categoria/editar/{{id_categoria}}">
                         <button type="button" id="editar">Editar</button>
                     </a>

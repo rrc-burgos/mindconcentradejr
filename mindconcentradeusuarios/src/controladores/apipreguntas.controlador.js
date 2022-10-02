@@ -7,7 +7,7 @@ const sql = require("../configbd/database.sql")
 
 apipreguntasctl.apipreguntas = (req, res) => {
 
-    res.render("pregunta/apipreguntas")
+    res.render("/pregunta/apipreguntas")
 
 }
 

@@ -1,4 +1,4 @@
-.nav-enlace{
+#nav-enlace{
     display: inline-block;
     background: #124e5e;
     color:#fff;
@@ -6,7 +6,7 @@
     text-decoration: none;
     border-radius: 10px;
 }
-.nav-enlace:hover{
+#nav-enlace:hover{
     background: #addae5;
 }
 nav{
@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-around; 
 }
-.nav-boton{
+#nav-boton{
     background: #093846;
     color: #fff;
     padding: 10px 0;
@@ -55,7 +55,7 @@ body {
     left: 2%;
 }
 
-.titulo{
+#titulo{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -78,7 +78,7 @@ p{
     transform: translate(-50%,-50%);
 
 }
-.container{
+#container{
     position: absolute;
     border-radius: 25px;
     width: 500px;
