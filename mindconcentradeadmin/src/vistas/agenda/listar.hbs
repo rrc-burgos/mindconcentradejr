@@ -3,14 +3,14 @@
 <body>
     <form action="/agenda/lista/{{user.id_usuario}}" method="get">
 
-        <div class="controlador"><br>
+        <div id="controlador"><br>
             <br>
 
             <div id="contenedor">
 
                 {{#each lista}}
                 <div class="row">
-                    <div class="column" id="lab">
+                    <div id="column" id="lab">
                         <div id="Nombre">
                             <label><b> {{nombreAgenda}} </b></label>
                         </div>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
 
-                    <div class="column" id="butt">
+                    <div id="column" id="butt">
                         <a href="/agenda/editar/{{id_agenda}}">
                             <button type="button" id="editar">Editar</button>
                         </a>

@@ -2,14 +2,14 @@
 
 <form action="/usuario/listar/{{user.id_usuario}}" method="get">
 
-    <div class="controlador"><br>
+    <div id="controlador"><br>
         <br>
 
         <div id="contenedor">
 
             {{#each lista}}
             <div class="row">
-                <div class="column" id="lab">
+                <div id="column" id="lab">
                     <div id="Nombre">
                         <label>Nombres:<b> {{nombre}} </b></label>
                     </div>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <div class="column" id="butt">
+                <div id="column" id="butt">
                     <a href="/usuario/editar/{{id_usuario}}">
                         <button type="button" id="editar">Editar</button>
                     </a>

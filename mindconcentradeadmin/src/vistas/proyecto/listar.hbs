@@ -6,11 +6,11 @@
         <div id="contenedor"><br>
             <br>
 
-            <div class="datos">
+            <div id="datos">
 
                 {{#each lista}}
                 <div class="row">
-                    <div class="column" id="lab">
+                    <div id="column" id="lab">
                         <div id="Nombre">
                             <label><b> {{nombreProyecto}} </b></label>
                         </div>
@@ -27,7 +27,7 @@
                             <label>{{visionProyecto}}</label>
                         </div>
                     </div>
-                    <div class="column" id="butt">
+                    <div id="column" id="butt">
                         <a href="/proyecto/editar/{{id_proyecto}}">
                             <button type="button" id="editar">Editar</button>
                         </a>
@@ -42,7 +42,7 @@
             {{/each}}
             {{#each detalleLista}}
 
-            <div class="column" id="Objetivos">
+            <div id="column" id="Objetivos">
                 <label>{{objetivosProyecto}}</label>
             </div>
             {{/each}}
