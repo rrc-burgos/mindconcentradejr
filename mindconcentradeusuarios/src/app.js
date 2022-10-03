@@ -76,4 +76,5 @@ app.use(require("./rutas/actividades.rutas"))
 app.use(require("./rutas/apipreguntas.rutas"))
 app.use(require("./rutas/gamepreguntas.rutas"))
 app.use(require("./rutas/dashboard.rutas"))
+app.use(require("./rutas/contacto.rutas"))
 module.exports = app;

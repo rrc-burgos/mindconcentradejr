@@ -1,0 +1,112 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/contacto.css">
+
+<body>
+
+	<a href="/">
+		<img src="/img/logom.jpg" id="logo">
+	</a>
+
+
+	<form action="/contacto" method="get">
+
+		<div id="contenedor">
+
+			<div class="row" id="row">
+				<article>
+					<h2 style="text-align:center; color: black;">Envia tus Sugerencias</h2>
+					<br>
+					<p style="text-align:justify; color: black;"> Lo que hace que un sitio sea un gran sitio web
+						depende
+						del ti. Por ese motivo agradecemos tus sugerencias.
+					<p>
+						<br>
+				</article>
+			</div>
+
+			<div class="row">
+
+				<div>
+					<form id="formulario" method="post" action="contacto.php" onsubmit="aplicacion.Agregar()">
+						{{!-- {{#each idMax}} --}}
+						<div>
+							<label type="submit" name="nombre" id="nombre"><b>Nombre:</b></label>
+							<input name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
+
+						</div>
+
+						<div>
+							<label type="date" name="email" id="email"><b>Email:</b> </label>
+							<input name="email" id="email" aria-describedby="helpId" placeholder="Email">
+
+						</div>
+
+						<div>
+							<label type="date" name="sugerencia" id="sugerencia"><b>Sugerencia:</b>
+							</label>
+							<input name="sugerencia" id="sugerencia" aria-describedby="helpId" placeholder="Sugerencia">
+
+						</div>
+
+						<br />
+						<br />
+						<button id="bott" type="submit" value="Ingresar"><b>ENVIAR</b></button>
+
+				</div>
+
+				<div class="column" id="imagen">
+					<img src="/img/img5.png">
+					<br><br>
+				</div>
+
+			</div>
+
+		</div>
+		<br>
+		</div>
+		<br><br><br><br>
+		<!-- FOOTER -->
+		<footer>
+			<div class="banner-wrapper">
+				<div class="icon-text">
+
+					<div class="icon-text-text">
+
+						<ul class="social">
+
+							<b>Encuentranos en:</b>
+
+							<li>
+								<a href="mailto:contact@faztweb.com">
+									<i class="fa fa-envelope-o"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://facebook.com/fazttech">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://twitter.com/fazttech">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://instagram.com/fazttech">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a>
+									&copy; <a href="http://faztweb.com">MindConcentrade.com - 2022</a>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</form>
+
+
+</body>
