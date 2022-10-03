@@ -19,7 +19,7 @@ body{ /*tipo de letra*/
 
 #tituloNosotros  {
   display:flex;
-  height: 430px;
+  height: 300px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -201,7 +201,7 @@ background-size: cover;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.5em;
 }
 
 #cards #card {
@@ -226,7 +226,7 @@ background-size: cover;
 }
 
 #cards #card > #contenido-texto-card {
-  width: 46 %;
+  width: 46%;
   color: #fff;
 }
 
