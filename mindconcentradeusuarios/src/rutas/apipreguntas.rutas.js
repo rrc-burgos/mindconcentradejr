@@ -7,5 +7,5 @@ const {apipreguntas} = require("../controladores/apipreguntas.controlador")
 rutas.get("/apipreguntas", apipreguntas )
 
 
-module.exports = rutas  
+module.exports = rutas 
 
