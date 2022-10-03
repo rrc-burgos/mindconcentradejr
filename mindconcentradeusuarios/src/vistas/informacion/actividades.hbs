@@ -89,20 +89,6 @@
 
                 </div>
 
-                <div class="col-md-7"> <br>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Nº</th>
-                                <th>Actividad</th>
-                                <th>Dia</th>
-                                <th>Fecha</th>
-                                <th>Hora</th>
-                            </tr>
-                        </thead>
-                        <tbody id="actividades">
-                </div>
-                </tbody>
                 </table>
             </div>
 
@@ -137,7 +123,7 @@
                                     datos += "<td>" + actividad.dia + "</td>";
                                     datos += "<td>" + actividad.fecha + "</td>";
                                     datos += "<td>" + actividad.hora + "</td>";
-                                    datos += '<td>  <div class="btn-group" role="group" aria-label=""><button type="button" class="btn-btn-info">Editar</button><button type="button" class="btn-btn-danger" onclick="aplicacion.Borrar(' + actividad.id + ')" >Borrar</button></div>' + '</td>';
+                                    datos += '<td>  <div id="btn-group" role="group" aria-label=""><button type="button" id="btn-btn-info">Editar</button><button type="button" id="btn-btn-danger" onclick="aplicacion.Borrar(' + actividad.id + ')" >Borrar</button></div>' + '</td>';
 
                                     datos += "</tr>";
                                 }
@@ -199,38 +185,38 @@
         <br><br>
         <!-- FOOTER -->
         <footer>
-            <div class="banner-wrapper">
-                <div class="icon-text">
+            <div id="banner-wrapper">
+                <div id="icon-text">
 
-                    <div class="icon-text-text">
+                    <div id="icon-text-text">
 
-                        <ul class="social">
+                        <ul id="social">
 
                             <b>Encuentranos en:</b>
 
                             <li>
-                                <a href="mailto:contact@faztweb.com">
-                                    <i class="fa fa-envelope-o"></i>
+                                <a href="/">
+                                    <i id="fa fa-envelope-o"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://facebook.com/fazttech">
-                                    <i class="fa fa-facebook"></i>
+                                <a href="http://facebook.com/">
+                                    <i id="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://twitter.com/fazttech">
-                                    <i class="fa fa-twitter"></i>
+                                <a href="http://twitter.com/">
+                                    <i id="fa fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://instagram.com/fazttech">
-                                    <i class="fa fa-instagram"></i>
+                                <a href="http://instagram.com/">
+                                    <i id="fa fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
                                 <a>
-                                    &copy; <a href="http://faztweb.com">MindConcentrade.com - 2022</a>
+                                    &copy; <a href="/">MindConcentrade.com - 2022</a>
                                 </a>
                             </li>
                         </ul>

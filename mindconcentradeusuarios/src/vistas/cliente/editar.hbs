@@ -1,50 +1,47 @@
-<link rel="stylesheet" href="/css/editar.css " />
+<link rel="stylesheet" href="/css/agregarCliente.css " />
 
 {{#each lista}}
 
 <form action="/cliente/editar/{{id_cliente}}" method="post">
-  <div class=" " id="contenedor">
-    <br />
-
-    <div id="titulo">
-      <label><b>AGREGAR ACTIVIDAD A LA AGENDA</b></label>
+  <div id="Form">
+    <h1>ACTUALIZAR DATOS DEL  CLIENTE</h1>
+    <div id="grupo">
+      <input type="text" name="nombreCliente" id="nombreCliente" required><span id="barra"></span>
+      <label for="">Nombre</label>
     </div>
-
-    <div id="nombreCliente">
-      <label><b> Nombre:</b></label>
-      <input value="{{nombreCliente}}" type="text" name="nombreCliente" id="nombreCliente" />
+    <div id="grupo">
+      <input type="text" name="apellidoCliente" id="apellidoCliente" required><span id="barra"></span>
+      <label for="">Apellido</label>
     </div>
-    <div id="apellidoCliente">
-      <br />
-      <label>Apellido:</label>
-      <input value="{{apellidoCliente}}" type="text" name="apellidoCliente" id="apellidoCliente" />
+    <div id="grupo">
+      <input type="text" name="cedulaCliente" id="cedulaCliente" required><span id="barra"></span>
+      <label for="">Cedula</label>
     </div>
-    <div id="username">
-      <br />
-      <label><b>Nick</b></label>
-      <input value="{{username}}" type="text" name="horaAgenda" id="hora" />
+    <div id="grupo">
+      <input type="email" name="correoCliente" id="correoCliente" required><span id="barra"></span>
+      <label for="">Correo Electronico</label>
     </div>
-    <div id="direccionCliente">
-      <br />
-      <label><b>Direccion</b></label>
-      <input value="{{direccionCliente}}" type="text" name="direccionCliente" id="direccionCliente" />
+    <div id="grupo">
+      <input type="text" name="direccionCliente" id="direccionCliente" required><span id="barra"></span>
+      <label for="">Direccion</label>
     </div>
-    <br /><br />
-    <div id="celularCliente">
-      <br />
-      <label><b>Celular</b></label>
-      <input value="{{celularCliente}}" type="text" name="celularCliente" id="celularCliente" />
+    <div id="grupo">
+      <input type="text" name="celularCliente" id="celularCliente" required><span id="barra"></span>
+      <label for="">Celular</label>
     </div>
-    <div id="hobbieCliente">
-      <br />
-      <label><b>Hobbie:</b></label>
-      <input value="{{hobbieCliente}}" type="text" name="hobbieCliente" id="hobbieCliente" />
+    <div id="grupo">
+      <input type="text" name="username" id="username" required><span id="barra"></span>
+      <label for="">Nick</label>
     </div>
-    <br /><br />
-    {{/each}}
-
-    <div id="guardar">
+    <div id="grupo">
+      <input type="text" name="hobbieCliente" id="hobbieCliente" required><span id="barra"></span>
+      <label for="">Hobbie</label>
+    </div>
+        <div id="guardar">
       <button type="submit" id="actualizar">Actualizar</button>
     </div>
   </div>
+    {{/each}}
+
+
 </form>

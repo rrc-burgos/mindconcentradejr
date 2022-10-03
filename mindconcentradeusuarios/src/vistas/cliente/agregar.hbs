@@ -1,67 +1,40 @@
-<link rel="stylesheet" href="/css/agregar.css " />
+<link rel="stylesheet" href="/css/agregarCliente.css " />
 
   <form action="/cliente/agregar/1" method="post">
-    <div  id="contenedor">
-      <div id="titulo">
-        <h1>Agregar sus Datos</h1>
-      </div>
-      <br />
-      <div id="nombreCliente">
-        <label>Nombre:</label>
-        <input
-          type="text"
-          name="nombreCliente"
-          id="nombreCliente"
-        />
-      </div>
-      <div id="apellidoCliente">
-        <label>Apellido:</label>
-        <input
-          type="text"
-          name="apellidoCliente"
-          id="apellidoCliente"
-        />
-      </div>
-      <div id="cedulaCliente">
-        <label>Cedula:</label>
-        <input        
-          type="text"
-          name="cedulaCliente"
-          id="cedulaCliente"
-        />
-      </div>
-      <div id="direccionCliente">
-        <label>Direccion:</label>
-        <input
-          type="text"
-          name="direccionCliente"
-          id="direccionCliente"
-        />
-      </div>      
-      <div id="celularCliente">
-        <label>Celular:</label>
-        <input
-          type="text"
-          name="celularCliente"
-          id="celularCliente"
-        />
-      </div>
-      <div id="username">
-        <label>Nick:</label>
-        <input  
-        type="text" 
-        name="username" 
-        id="username" 
-        />
-      </div>
-      <div id="hobbieCliente">
-        <label>Hobbie:</label>
-        <input
-          type="text"
-          name="hobbieCliente"
-          id="hobbieCliente"
-        />
-      </div>
+        <div id="Form">
+            <h1>REGISTRO DE CLIENTE</h1>
+            <div id="grupo">
+                <input type="text" name="nombreCliente" id="nombreCliente" required><span id="barra"></span> 
+                <label for="">Nombre</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="apellidoCliente" id="apellidoCliente" required><span id="barra"></span>  
+                <label for="">Apellido</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="cedulaCliente" id="cedulaCliente" required><span id="barra"></span> 
+                <label for="">Cedula</label>
+            </div>
+            <div id="grupo">
+                <input  type="email" name="correoCliente" id="correoCliente" required><span id="barra"></span> 
+                <label for="">Correo Electronico</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="direccionCliente" id="direccionCliente" required><span id="barra"></span> 
+                <label for="">Direccion</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="celularCliente" id="celularCliente" required><span id="barra"></span>
+                <label for="">Celular</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="username" id="username" required><span id="barra"></span> 
+                <label for="">Nick</label>
+            </div>
+            <div id="grupo">
+                <input  type="text" name="hobbieCliente" id="hobbieCliente" required><span id="barra"></span> 
+                <label for="">Hobbie</label>
+            </div>
 
       <div id="guardar">
         <button type="submit" id="confirmar"><b> Guardar </b></button>
