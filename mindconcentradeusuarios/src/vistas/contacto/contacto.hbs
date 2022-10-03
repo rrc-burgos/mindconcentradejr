@@ -1,12 +1,6 @@
 <link rel="stylesheet" href="/css/contacto.css">
 
 <body>
-
-	<a href="/">
-		<img src="/img/logom.jpg" id="logo">
-	</a>
-
-
 	<form action="/contacto" method="get">
 
 		<div id="contenedor">
@@ -25,7 +19,7 @@
 
 			<div class="row">
 
-				<div>
+				<div id="inf">
 					<form id="formulario" method="post" action="contacto.php" onsubmit="aplicacion.Agregar()">
 						{{!-- {{#each idMax}} --}}
 						<div>
@@ -49,7 +43,7 @@
 
 						<br />
 						<br />
-						<button id="bott" type="submit" value="Ingresar"><b>ENVIAR</b></button>
+						<button id="confirmar" type="submit" value="Ingresar"><b>ENVIAR</b></button>
 
 				</div>
 

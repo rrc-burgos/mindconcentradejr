@@ -8,14 +8,14 @@ body {
   background: linear-gradient(90deg, #4badc4, #055468);
   padding: 40px;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 10px;
   border-radius: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
 
 }
 
-#bott {
+#confirmar {
   margin-top: 10px;
   width: 150px;
   height: 50px;
@@ -29,11 +29,11 @@ body {
   border-radius: 5px;
 }
 
-#bott:hover {
+#confirmar:hover {
   background-color: #86FDE8
 }
 
-#bott:active {
+#confirmar:active {
   background-color: #86FDE8;
   transform: translateY(4px);
 }
@@ -50,26 +50,22 @@ label {
   display: inline-block;
 }
 
-#logo {
-  margin-top: -8%;
-}
+
 
 #row {
   text-align: center;
   margin-left: 7%;
 }
 
-#img3 {
-  text-align: center;
-  width: 60%;
-  height: 100%;
+#inf {
+  margin-left: 8%;
 }
 
-#imagen {
-  margin-left: 700px;
-  margin-top: -320px;
-  left: -45%;
 
+
+#imagen {
+  margin-left: 70%;
+  margin-top: -320px;
 }
 
 #but {

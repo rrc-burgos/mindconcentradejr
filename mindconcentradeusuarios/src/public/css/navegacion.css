@@ -41,3 +41,21 @@ nav{
     }
 }
 
+#butomn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    left: 3%;
+    border: none;
+    background-color: transparent;
+ }
+ #image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    left: 3%;
+    cursor: pointer;
+ }
+
