@@ -63,7 +63,7 @@ actividadesctl.mostrar = (req, res) => {
     actividadesctl.eliminar = async(req, res) => {
         const id = req.user.id_usuario
         const ids = req.params.id
-        await orm.actividades.destroy({where:{id_actividad:ids}})
+        await orm.actividades.destroy({ where: { id_actividad: ids}})
     
         req.flash("success","Exito al Eliminar")
         res.redirect("/actividades/lista/"+id)

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/listar.css ">
 
 <body>
-    <form action="/actividades/lista/{{user.id_cliente}}" method="get">
+    <form action="/actividades/lista/{{user.id_actividad}}" method="get">
 
         <div id="controlador"><br>
             <br>
@@ -24,10 +24,10 @@
                             <label>{{comentarioActividad}}</label>
                         </div>
                         <div>
-                            <a href="/actividades/editar/{{id_cliente}}">
+                            <a href="/actividades/editar/{{id_actividad}}">
                                 <button type="button" id="editar">Editar</button>
                             </a>
-                            <a href="/actividades/eliminar/{{id_cliente}}">
+                            <a href="/actividades/eliminar/{{id_actividad}}">
                                 <button type="button" id="eliminar">Eliminar</button>
                             </a>
                         </div>
@@ -41,7 +41,7 @@
     </div>
     <div id="agregar">
         <a href="/actividades/agregar/">
-            <button type="button" id="agregar"><b> AGREGAR CLIENTE </b></button>
+            <button type="button" id="agregar"><b> AGREGAR ACTIVIDADES </b></button>
         </a>
     </div>
 </body>
