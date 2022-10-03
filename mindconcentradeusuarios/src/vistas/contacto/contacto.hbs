@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/contacto.css">
+
+<body>
+
+	<a href="/">
+		<img src="/img/logom.jpg" id="logo">
+	</a>
+
+
+	<form action="/contacto" method="get">
+
+		<div id="contenedor">
+
+			<div class="row" id="row">
+				<article>
+					<h2 style="text-align:center; color: black;">Envia tus Sugerencias</h2>
+					<br>
+					<p style="text-align:justify; color: black;"> Lo que hace que un sitio sea un gran sitio web
+						depende
+						del ti. Por ese motivo agradecemos tus sugerencias.
+					<p>
+						<br>
+				</article>
+			</div>
+
+			<div class="row">
+
+				<div>
+					<form id="formulario" method="post" action="contacto.php" onsubmit="aplicacion.Agregar()">
+						{{!-- {{#each idMax}} --}}
+						<div>
+							<label type="submit" name="nombre" id="nombre"><b>Nombre:</b></label>
+							<input name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
+
+						</div>
+
+						<div>
+							<label type="date" name="email" id="email"><b>Email:</b> </label>
+							<input name="email" id="email" aria-describedby="helpId" placeholder="Email">
+
+						</div>
+
+						<div>
+							<label type="date" name="sugerencia" id="sugerencia"><b>Sugerencia:</b>
+							</label>
+							<input name="sugerencia" id="sugerencia" aria-describedby="helpId" placeholder="Sugerencia">
+
+						</div>
+
+						<br />
+						<br />
+						<button id="bott" type="submit" value="Ingresar"><b>ENVIAR</b></button>
+
+				</div>
+
+				<div id="imagen">
+					<img src="/img/img5.png">
+					<br><br>
+				</div>
+
+			</div>
+
+		</div>
+		<br>
+		</div>
+		<br><br><br><br>
+	</form>
+
+
+</body>

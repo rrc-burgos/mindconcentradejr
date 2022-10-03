@@ -72,6 +72,17 @@ body {
     align-items: center;
  }
  
+ #permiso{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #bca8e0, #421369);
+    align-items: center;
+ }
  
 #cancelar{
 
@@ -80,8 +91,8 @@ body {
     cursor: pointer;
     border-radius: 5%;
     position: absolute;
-    top: 15%;
-    right: 30%;
+    top: 14%;
+    right: 27%;
     font-size: 25px;
     color:black;
 

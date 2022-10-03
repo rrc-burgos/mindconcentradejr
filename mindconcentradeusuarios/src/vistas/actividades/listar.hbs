@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/css/listar.css ">
+
+<body>
+    <form action="/actividades/lista/{{user.id_actividad}}" method="get">
+
+        <div id="controlador"><br>
+            <br>
+
+            <div id="contenedor">
+
+                {{#each lista}}
+                <div id="row">
+                    <div id="column" id="lab">
+                        <div id="grupo">
+                            <label>{{nombreActividad}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{descripcionActividad}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{fechaActividad}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{comentarioActividad}}</label>
+                        </div>
+                        <div>
+                            <a href="/actividades/editar/{{id_actividad}}">
+                                <button type="button" id="editar">Editar</button>
+                            </a>
+                            <a href="/actividades/eliminar/{{id_actividad}}">
+                                <button type="button" id="eliminar">Eliminar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    {{/each}}
+
+                </div>
+            </div>
+    </form>
+    </div>
+    <div id="agregar">
+        <a href="/actividades/agregar/">
+            <button type="button" id="agregar"><b> AGREGAR ACTIVIDADES </b></button>
+        </a>
+    </div>
+</body>

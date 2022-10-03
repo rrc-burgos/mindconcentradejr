@@ -29,6 +29,7 @@ const rolModelos = require ("../modelos/rol")
 const permisoModelos = require ("../modelos/permiso")
 const categoriaModelos = require ("../modelos/categoria")
 const detalleCategoriaModelo = require ("../modelos/detalleCategoria");
+const contactoModelos = require ("../modelos/contacto")
 
 
 
@@ -76,6 +77,7 @@ const rol = rolModelos(sequelize, Sequelize)
 const permiso = permisoModelos(sequelize, Sequelize)
 const categoria = categoriaModelos(sequelize, Sequelize)
 const detalleCategoria = detalleCategoriaModelo(sequelize, Sequelize)
+const contacto = contactoModelos(sequelize, Sequelize)
 
 usuario.hasMany(actividades)
 actividades.belongsTo(usuario)
@@ -116,6 +118,8 @@ categoria.belongsTo(usuario)
 categoria.hasMany(detalleCategoria)
 detalleCategoria.belongsTo(categoria)
 
+usuario.hasMany(contacto)
+contacto.belongsTo(usuario)
 
 
 
@@ -136,5 +140,6 @@ module.exports = {
   proyecto,
   detalleProyecto,
   categoria,
-  detalleCategoria
+  detalleCategoria,
+  contacto
 }

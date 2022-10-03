@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/agregarCliente.css " />
+
+<form action="/actividades/agregar/{{user.id_usuario}}" method="post">
+  <div id="Form">
+    <h1>REGISTRO DE ACTIVIDADES</h1>
+
+    <div id="grupo">
+      <input type="text" name="nombreActividad" id="nombreActividad" required><span id="barra"></span>
+      <label for="">Nombre de la Actividad</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="descripcionActividad" id="descripcionActividad" required><span id="barra"></span>
+      <label for="">Descripcion de la Actividad</label>
+    </div>
+    <div id="grupo">
+      <input type="date" name="fechaActividad" id="fechaActividad" required><span id="barra"></span>
+      <label for="">Fecha</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="comentarioActividad" id="comentarioActividad" required><span id="barra"></span>
+      <label for="">Comentario</label>
+    </div>
+
+    <div>
+      <button type="submit" id="confirmar"><b> Guardar </b></button>
+    </div>
+    <div>
+      <a href="/actividades/lista/{{user.id_usuario}}">
+        <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
+    </div>
+  </div>
+</form>
