@@ -1,0 +1,53 @@
+[
+  {
+      "categoria": "Procastinacion",
+      "pregunta": "¿Que tiempo invierte en realizar sus tareas?",
+      "respuesta": "De 5 a 7 horas",
+      "incorrecta1": "De 2 a 3 horas",
+      "incorrecta2": "De 3 a 4 horas",
+      "incorrecta3": "una hora o menos",
+      "imagen": "https://www.ealde.es/wp-content/uploads/2018/02/gestion-del-tiempo-empresas.jpg",
+      "objectFit": "cover"
+  },
+  {
+      "categoria": "Procastinacion",
+      "pregunta": "¿Se siente agotado antes de realizar una actividad?",
+      "respuesta": "Algunas veces",
+      "incorrecta1": "Pocas veces",
+      "incorrecta2": "Casi siempre",
+      "incorrecta3": "Frecuentemente",
+      "imagen": "https://smoda.elpais.com/wp-content/uploads/2019/04/GettyImages-1084925546-635x480.jpg",
+      "objectFit": "cover"
+  },
+  {
+      "categoria": "Procastinacion",
+      "pregunta": "¿Se distrae con facilidad cuando le dan instrucciones?",
+      "respuesta": "Algunas veces",
+      "incorrecta1": "Pocas veces",
+      "incorrecta2": "Casi siempre",  
+      "incorrecta3": "Frecuentemente",
+      "imagen": "https://escueladelamemoria.com/wp-content/uploads/2016/12/Distracci%C3%B3n.jpg",
+      "objectFit": "cover"
+  },
+  {
+      "categoria": "Procastinacion",
+      "pregunta": "¿Como se sentiria si no hace la tarea que se requiere?",
+      "respuesta": "sumamente preocupado",
+      "incorrecta1": "Algo preocupado",
+      "incorrecta2": "No me inportaria ",
+      "incorrecta3": "Se que podria hacerla mas tarde",
+      "imagen": "https://www.clikisalud.net/wp-content/uploads/2020/12/preocupacion-cronica-afecta-salud-mental-2.jpg",
+      "objectFit": "cover"
+  },
+  {
+      "categoria": "Procastinacion",
+      "pregunta": "¿Es de las personas que deja todo para el otro dia?",
+      "respuesta": "Pocas veces",
+      "incorrecta1": "Si tengo tiempo de sobra si",
+      "incorrecta2": "No porque soy conciente del tiempo de entrega",
+      "incorrecta3": "Soy muy cumplido con mis tiempos",
+      "imagen": "https://st2.depositphotos.com/1001599/10809/v/450/depositphotos_108095686-stock-illustration-man-lying-in-a-hammock.jpg",
+      "objectFit": "cover"
+  }
+  
+]

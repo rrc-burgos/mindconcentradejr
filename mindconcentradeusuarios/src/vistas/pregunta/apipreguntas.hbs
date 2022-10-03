@@ -1,19 +1,27 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="apppreguntas.css" />
-</head>
 
+<link rel="stylesheet" href="/css/apppreguntas.css" />
 <body>
-  <form action="pregunta/apipreguntas" method="post">
+  <form action="pregunta/apipreguntas" method="post"> 
 
-    <div id="container">
-      <div id="home" id="flex-center flex-column">
-        <h1>Quick Quiz</h1>
-        <a id="btn" href="/gamepreguntas">Iniciar</a>
-        <a id="btn" href="/scorespreguntas">Puntuaciones</a>
+    <div id="contenedor">
+    <div id="puntaje" id="puntaje"></div>
+    <div id="encabezado">
+      <div id="categoria" id="categoria">
       </div>
+      <div id="numero" id="numero"></div>
+      <div id="pregunta" id="pregunta">
+      </div>
+      <img src="#" id="imagen" id="imagen">
     </div>
+  
+    <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+    <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+    <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+    <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+    
+    <script src="/appapi/base-preguntas.json"></script>
+    <script src="/appapi/bancoPreguntas.js"></script>
+  </div>
+ 
   </form>
 </body>
