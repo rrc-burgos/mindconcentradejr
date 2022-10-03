@@ -48,11 +48,12 @@ body {
 }
 
 #contenedor {
-    width: 45%;
+    position: relative;
+    width: 50%;
     background: linear-gradient(90deg, #4badc4, #055468);
-    padding: 120px;
+    padding: 2% 5% 3% 5%;
     margin: auto;
-    margin-top: 110px;
+    margin-top: 3%;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -71,6 +72,17 @@ body {
     align-items: center;
  }
  
+ #permiso{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #bca8e0, #421369);
+    align-items: center;
+ }
  
 #cancelar{
 
@@ -79,8 +91,8 @@ body {
     cursor: pointer;
     border-radius: 5%;
     position: absolute;
-    top: 23%;
-    left: 65%;
+    top: 25%;
+    right: 27%;
     font-size: 25px;
     color:black;
 
@@ -100,5 +112,24 @@ body {
     background: linear-gradient(90deg,#a8d6e0, #135869 );
      
  }
- 
+
+ #numero {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #a8d6e0;
+    border-radius: 5px;
+
+  }
+
+ input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #a8d6e0;
+    border-radius: 5px;
+
+  }
+  
+  label {
+    display: inline-block;
+  }
  
