@@ -1,4 +1,4 @@
-.nav-enlace{
+#nav-enlace{
     display: inline-block;
     background: #124e5e;
     color:#fff;
@@ -7,7 +7,7 @@
     border-radius: 10px;
     text-align: end;
 }
-.nav-enlace:hover{
+#nav-enlace:hover{
     background: #addae5;
 }
 nav{
@@ -16,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-around; 
 }
-.nav-boton{
+#nav-boton{
     background: #093846;
     color: #fff;
     padding: 10px 0;
@@ -39,10 +39,6 @@ nav{
     .desaparece{
         display: none;
     }
-    .container{
-
-        display: inline-block;
-    }
 }
 
 #logo{
@@ -60,10 +56,10 @@ body {
 
 
 
-.container{
+#container{
     position: absolute;
     width: 450px;
-    height: 400px;
+    height: 470px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -78,7 +74,7 @@ body {
 
 }
 
-.img2{
+#img2{
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -88,6 +84,7 @@ body {
     -8px -8px 15px #203A43;
     margin-bottom: 20px;
 }
+
 
 h2{
   font-size: 20px;
@@ -101,6 +98,10 @@ label{
 
 }
 
+#labels{
+    margin: 1px 1px ;
+}
+
 #usuario{
     margin: 20px 5px 20px 20px;
     font-size: 15px;
@@ -108,29 +109,65 @@ label{
 
 }
 #username{
-    border-radius: 10%;
+    width: 100%;
+    padding: 5px 1px;
+    margin: 1px 5px;
+    box-sizing: border-box;
 }
+#user{
+    width: 100%;
+    padding: 5px 1px;
+    margin: 1px 5px;
+    box-sizing: border-box;
+}
+
 
 #contraseña{
     margin: 20px 5px 20px 20px;
-    border-radius: 20px;
     font-size: 15px;
     color: #fff;
     
 }
 #password{
-    border-radius: 10%;
+    width: 100%;
+    padding: 5px 1px;
+    margin: 1px 5px;
+    box-sizing: border-box;
+}
+#pass{
+    width: 100%;
+    padding: 5px 1px;
+    margin: 1px 5px;
+    box-sizing: border-box;
 }
 
-#ingresar{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+
+#ingresar {
+    margin-top: 10px;
+    width: 150px;
     height: 50px;
     font-size: 20px;
-    font-weight:700;
-    border-radius: 10%;
-    color:black;
-    background: linear-gradient(90deg,#a8d6e0, #135869 );
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #2C5364;
+    background: #a8d6e0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #ingresar:hover {background-color: #86FDE8}
+  
+  #ingresar:active {
+    background-color: #86FDE8;
+    transform: translateY(4px);
+  }
+
+
+#registro{
+    font-size: 15px;
 }
+#mind{
+    font-size: 12px;
+}
+

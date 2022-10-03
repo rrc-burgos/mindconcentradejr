@@ -1,12 +1,13 @@
-.nav-enlace{
+#nav-enlace{
     display: inline-block;
     background: #124e5e;
     color:#fff;
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 10px;
+    text-align: end;
 }
-.nav-enlace:hover{
+#nav-enlace:hover{
     background: #addae5;
 }
 nav{
@@ -15,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-around; 
 }
-.nav-boton{
+#nav-boton{
     background: #093846;
     color: #fff;
     padding: 10px 0;

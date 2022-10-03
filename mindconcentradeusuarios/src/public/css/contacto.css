@@ -76,37 +76,6 @@ label {
 
 }
 
-footer {
-	background: black;
-	width: 100%;
-	overflow: auto;
-  }
-
-  .icon-text-text {
-	float: left;
-	width: 100%;
-  }
-  
-  .footer-nav {
-	text-align: right;
-  }
-
-  .social {
-	list-style-type: none;
-	text-align: end;
-  }
-  
-  .social li {
-	display: inline;
-  }
-  
-  .social i {
-	font-size: 300%;
-	margin: 1%;
-	padding: 1%;
-	color: #c3d7df;
-  }
-  
   @media screen and (max-width: 1024px) {
 	p {
 	  font-size: 100%;

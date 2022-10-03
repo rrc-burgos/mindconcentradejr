@@ -1,45 +1,46 @@
-.nav-enlace{
-    display: inline-block;
-    background: #124e5e;
-    color:#fff;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: end;
+#nav-enlace{
+  display: inline-block;
+  background: #124e5e;
+  color:#fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: end;
 }
-.nav-enlace:hover{
-    background: #addae5;
+#nav-enlace:hover{
+  background: #addae5;
 }
 nav{
-    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
-    padding: 10px;
-    display: flex;
-    justify-content: space-around; 
+  background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; 
 }
-.nav-boton{
-    background: #093846;
-    color: #fff;
-    padding: 10px 0;
-    border: 2px solid #fff;
-    display: none;
-    border-radius: 8px;
+#nav-boton{
+  background: #093846;
+  color: #fff;
+  padding: 10px 0;
+  border: 2px solid #fff;
+  display: none;
+  border-radius: 8px;
 }
 
 @media (max-width: 1024px) {
-    nav{
-        background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
-        flex-direction: column;
-    }
-    .nav-enlace{
-        margin: 10px 0;
-    }
-    .nav-boton{
-        display: inline-block;
-    }
-    .desaparece{
-        display: none;
-    }
+  nav{
+      background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
+      flex-direction: column;
+  }
+  .nav-enlace{
+      margin: 10px 0;
+  }
+  .nav-boton{
+      display: inline-block;
+  }
+  .desaparece{
+      display: none;
+  }
 }
+
 
 #logo{
 	width: 100px;
@@ -75,37 +76,6 @@ body {
 }
 
 
-footer {
-	background: black;
-	width: 100%;
-	overflow: auto;
-  }
-
-  .icon-text-text {
-	float: left;
-	width: 100%;
-  }
-  
-  .footer-nav {
-	text-align: right;
-  }
-
-  .social {
-	list-style-type: none;
-	text-align: end;
-  }
-  
-  .social li {
-	display: inline;
-  }
-  
-  .social i {
-	font-size: 300%;
-	margin: 1%;
-	padding: 1%;
-	color: #c3d7df;
-  }
-  
   @media screen and (max-width: 1024px) {
 	p {
 	  font-size: 100%;
