@@ -1,29 +1,30 @@
 <link rel="stylesheet" href="/css/agregarCliente.css " />
 
-{{#each lista}}
-
-<form action="/actividades/editar/{{id_cliente}}" method="post">
-  <div id="Form">
-    <h1>ACTUALIZAR ACTIVIDAD</h1>
-    <div id="grupo">
-      <input type="text" name="nombreActividad" id="nombreActividad" required><span id="barra"></span>
-      <label for="">Nombre de la Actividad</label>
+<body>
+  {{#each lista}}
+  <form action="/actividades/editar/{{id_actividad}}" method="post">
+    <div id="Form">
+      <h1>ACTUALIZAR ACTIVIDAD</h1>
+      <div id="grupo">
+        <input value="{{nombreActividad}}" type="text" name="nombreActividad" id="nombreActividad" required><span id="barra"></span>
+        <label for="">Nombre de la Actividad</label>
+      </div>
+      <div id="grupo">
+        <input value="{{descripcionActividad}}" type="text" name="descripcionActividad" id="descripcionActividad" required><span id="barra"></span>
+        <label for="">Descripcion de la Actividad </label>
+      </div>
+      <div id="grupo">
+        <input  value="{{fechaActividad}}" type="date" name="fechaActividad" id="fechaActividad" required><span id="barra"></span>
+        <label for="">Fecha</label>
+      </div>
+      <div id="grupo">
+        <input value="{{comentarioActividad}}" type="text" name="comentarioActividad" id="comentarioActividad"><span id="barra"></span>
+        <label for="">Comentario</label>
+      </div>
+    {{/each}}
+     <div id="guardar">
+        <button type="submit" id="actualizar">Actualizar</button>
+      </div>
     </div>
-    <div id="grupo">
-      <input type="text" name="descripcionActividad" id="descripcionActividad" required><span id="barra"></span>
-      <label for="">Descripcion de la Actividad/label>
-    </div>
-    <div id="grupo">
-      <input type="date" name="fechaActividad" id="fechaActividad" required><span id="barra"></span>
-      <label for="">Fecha</label>
-    </div>
-    <div id="grupo">
-      <input type="email" name="comentarioActividad" id="comentarioActividad"><span id="barra"></span>
-      <label for="">Comentario</label>
-    </div>
-    <div id="guardar">
-      <button type="submit" id="actualizar">Actualizar</button>
-    </div>
-  </div>
-  {{/each}}
-</form>
+  </form>
+</body>

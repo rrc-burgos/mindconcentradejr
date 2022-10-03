@@ -44,6 +44,7 @@ actividadesctl.mostrar = (req, res) => {
     actividadesctl.actualizar = async(req,res) =>{
         const id = req.user.id_usuario
         const ids = req.params.id
+
         const{nombreActividad,descripcionActividad,fechaActividad,comentarioActividad} = req.body
         const nuevaActividad ={
             nombreActividad,
