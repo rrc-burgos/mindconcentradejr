@@ -14,7 +14,7 @@ const app = express();
 require('./lib/passports');
 
 /// archivos compartidos
-app.set('port', process.env.PORT || 4200);
+app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'vistas'));
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',

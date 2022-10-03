@@ -101,3 +101,26 @@ input:focus~#barra::before{
     width: 100%;
 }
 
+#confirmar{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #a8e0ad, #1d6913);
+    align-items: center;
+ }
+ 
+ #cancelar{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #d18080, #b31010);
+    align-items: center;
+ }
