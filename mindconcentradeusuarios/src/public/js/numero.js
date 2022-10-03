@@ -15,4 +15,3 @@ class obtenerNumero{
 let numeros = new obtenerNumero()
 
 window.onload = numeros.aumento()
-
