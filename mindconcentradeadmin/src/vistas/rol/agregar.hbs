@@ -3,7 +3,7 @@
 <body>
     <form action="/rol/agregar/{{user.id_usuario}}" method="post">
 
-        <div class=" " id="contenedor"><br>
+        <div id="contenedor"><br>
 
             <div id="titulo">
                 <label><b>AGREGAR ROL</b></label>
@@ -17,14 +17,17 @@
                 <label><b> Descripcion de Rol:</b></label>
                 <input type="text" name="descripcionRol" id="descripcion">
             </div>
-
-
+            <div><br>
+                <a href="/permiso/permiso/">
+                    <button type="button" id="permiso"><b> Permiso</b></button>
+                </a>
+            </div>
             <div><br>
                 <button type="submit" id="confirmar"><b> Guardar </b></button>
-
             </div>
-        </div>
+
     </form>
+
     <div>
         <a href="/rol/lista/{{user.id_usuario}}"> <button type="buttom" id="cancelar"><b> Cancelar </b></button></a>
     </div>

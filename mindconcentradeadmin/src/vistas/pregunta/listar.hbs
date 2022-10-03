@@ -6,11 +6,11 @@
         <div id="contenedor"><br>
             <br>
 
-            <div class="datos">
+            <div id="datos">
 
                 {{#each lista}}
                 <div class="row">
-                    <div class="column" id="lab">
+                    <div id="column" id="lab">
                         <div id="Numero">
                             <label><b> {{numeroPregunta}} </b></label>
                         </div>
@@ -27,7 +27,7 @@
                             <label>{{estado}}</label>
                         </div>
                     </div>
-                    <div class="column" id="butt">
+                    <div id="column" id="butt">
                         <a href="/pregunta/editar/{{id_pregunta}}">
                             <button type="button" id="editar">Editar</button>
                         </a>
