@@ -72,6 +72,17 @@ body {
     align-items: center;
  }
  
+ #permiso{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:700;
+    border-radius: 5%;
+    color:black;
+    background: linear-gradient(90deg, #bca8e0, #421369);
+    align-items: center;
+ }
  
 #cancelar{
 
