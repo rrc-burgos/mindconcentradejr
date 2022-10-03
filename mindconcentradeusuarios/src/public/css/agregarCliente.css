@@ -19,10 +19,9 @@ form {
     margin-top: 3%;
     margin-left: 25%;
     font-family: 'Roboto';
-    background: #06beb6;
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
     background: linear-gradient(to right, #48b1bf, #06beb6);
-    height: 500px;
+    height: 570px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -150,6 +149,7 @@ input:focus~#barra::before{
  }
  
  #cancelar{
+    
     outline: none;
     padding: 0.4%;
     cursor: pointer;
