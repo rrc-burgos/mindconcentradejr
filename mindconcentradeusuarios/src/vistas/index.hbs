@@ -1,157 +1,197 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/index.css ">
-
-
+<head>
+    <link rel="shortcut icon" href="img/logom.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
 <body>
+    <header>
+        <nav>
+            <a href="/">inicio</a>
+            <a href="#tituloNosotros">nosotros</a>
+            <a href="#portafolio">portafolio</a>
+            <a href="#equipo contenedor">equipo</a>
+            <a href="#contenedor-footer">contacto</a>
+            <a href="/login">Inicia Sesion</a>
+            <a href="/registro">Registro</a>
 
-  <a href="/">
-    <img src="/img/logom.jpg" id="logo">
-  </a>
-
-
-  <nav>
-    <button class="nav-boton" onclick="accion()"><b>MENU</b></button>
-    <a href="/" class="nav-enlace desaparece"><b>Inicio</b></a>
-    <a href="/login" class="nav-enlace desaparece"><b>Inicia Sesion</b></a>
-    <a href="/registro" class="nav-enlace desaparece"><b>Registro</b></a>
-  </nav>
-  <br><br><br><br>
-
-    <div class="titulo">
-      <h1><b>MINDCONCENTRADE</b></h1>
-      <div class="content-all">
-        <div class="content-carrousel">
-          <figure><img src="img/procrastinar.gif"></figure>
-          <figure><img src="img/carrusel6.jpg"></figure>
-          <figure><img src="img/carrusel5.png"></figure>
-          <figure><img src="img/carrusel4.jpg"></figure>
-          <figure><img src="img/carrusel3.jpg"></figure>
-          <figure><img src="img/procrastinar4.gif"></figure>
-          <figure><img src="img/carrusel2.jpg"></figure>
-          <figure><img src="img/carrusel7.jpg"></figure>
-          <figure><img src="img/carrusel1.jpg"></figure>
+        </nav>
+        <section id="textos-header"> 
+            <h1>MindConcentrade</h1>
+            <h2>La concentración es la clave</h2>
+        </section>
+        <div id="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C298.81,217.61 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div> 
+    </header>
+    <main>
+        <div id="tituloNosotros">
+            <h2 id="titulo">Nosotros</h2> 
         </div>
-      </div>
-    </div>
-    <br><br><br><br><br><br><br>
+        <section  id="contenedor-sobre-nosotros">             
+            <div id="contenedor-sobre-nosotros"> 
+                <div>
+                    <img src="img/logo.png" alt="" id="imagen-about-us"> 
+                </div>
 
-    <div class="section">
-      <section class="caja1">
-        <p>
-          Tu salud mental es importante: MindConcentrade te brinda las herramientas para ayudarte a mejorarlas.
-        </p><br>
-        <h2>¿Con qué estas luchando mas en este momento?</h2>
-      </section>
-    </div>
-    <br><br><br><br><br><br><br><br>
-
-    <div class="contenedor">
-
-      <div class="contenedor-botones">
-        <a  href="pregunta/apipreguntas">
-        <button class="boton seis">
-          <span>
-              ESTRES
-          </span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-        </a>
-        <a  href="/apipreguntas">
-        <button class="boton seis">
-          <span>TDAH</span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-        </a>
+                <div id="contenido-textos"> 
+                    <h3>Vision</h3>
+                    <p>Ser la mejor aplicación al cuidado mental y desarrollo de rutinas de concentración para el fortalecimiento de buenos hábitos.</p>
+                    <h3>Mision</h3>
+                    <p>Buscamos cambiar y mejorar los habitos de las personas para que su productividad crezca y puedan lograr los objetivos que se propongan de esta forma seremos constantes con el desarrollo y el avance del proyecto abiertos siempre a nuevas ideas que cambien y mejoren todo para bien.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portafolio">
+            <div id="contenedor">
+                <h2 id="titulo">Escoje tu problema</h2>
+                <div id="galeria-port">
+                    <div id="imagen-port">
+                        <a href="/pregunta/apipreguntas">
+                        <img src="img/procastinacion1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Procastinacion</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/estres1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Estres</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/ansiedad1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Ansiedad</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/fatiga2.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.jpg" alt="">
+                            <p>Fatiga</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/tda1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>TDAH</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/agotamiento1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>AGOTAMIENTO</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/imagen3.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Agotamineto</p>
+                        </div>
+                    </div>
+                    <div id="imagen-port">
+                        <img src="img/autoestima1.jpg" alt="">
+                        <div id="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Autoestima/energia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Equipocontenedor">
+            <h2 id="titulo">Nuestro Equipo</h2> 
+            <div id="cards">
+                    <div id="card">
+                        <img id="imgEquipo" src="img/face1.jpg" alt="">
+                        <div id="contenido-texto-card">
+                            <h4>Jeysson Molina</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quisquam.</p>
+                        </div>
+                    </div>
+                    <div id="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div id="contenido-texto-card">
+                            <h4>Rommel Burgos</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quisquam.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div id="contenido-texto-card">
+                            <h4>Abigail Campo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quisquam.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div id="contenido-texto-card">
+                            <h4>Joel Cervantes</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quisquam.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div id="contenido-texto-card">
+                            <h4>Alejandro Sarmiento</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quisquam.</p>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <section id="about-services">
+                <div id="contenedor">
+                    <h2 id="titulo">Nuestros Servicios</h2>
+                    <div id="servicio-cont">
+                        <div id="servicio-ind">
+                            <img src="img/undraw_hacker_mind_-6-y85.svg" alt="">
+                            <div id="planConcentracion">
+                                <a id="Plan-Concentracion" href="">Plan Concentracion</a>
+                            </div>                           
+                            <p>Estudiar es una actividad que requiere la mayor concentración posible. Si tu capacidad para concentrarte es débil, existen numerosas técnicas de concentración que te ayudarán a dirigir toda atención hacia una sola tarea, en este caso la propia materia de estudio que hay que comprender e interiorizar</p>   
+                        </div>
+                        <div id="servicio-ind">
+                            <img src="img/undraw_mindfulness_re_mmj6.svg" alt="">
+                            <div id="planMeditacion">
+                                <a id="Plan-Meditacion" href="">Plan Meditacion</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, similique.</p>   
+                        </div>
+                        <div id="servicio-ind">
+                            <img src="img/undraw_personal_trainer_re_cnua.svg" alt="">
+                            <div id="planVidaFitness">
+                                <a id="Plan-Vida-Fitness" href="">Plan Vida Fitness</a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, similique.</p>   
         
-        <button class="boton seis">
-          <span>PROCASTINACION</span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-        <button class="boton seis">
-          <span>AGOTAMIENTO</span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-        <button class="boton seis">
-          <span>AUTOESTIMA</span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-        <button class="boton seis">
-          <span>OTROS</span>
-          <svg>
-            <rect x="0" y="0" fill="none"></rect>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <br><br><br><br>
-
-    <div class="caja2">
-      <p>
-        ¿Por qué Mindconcentrade?
-        Mindconcentrade está diseñado para atender a una amplia gama de usuarios que padecen
-        muchas formas de problemas de salud mental. Estas son algunas de las formas en que puede ayudarlo.
-      </p>
-    </div>
-    <br><br><br><br><br>
-
-    <div class="estres">
-      <img src="/img/estres.jpg">
-    </div>
-
-  <br><br><br><br><br><br>
-  
-  <!-- FOOTER -->
-  <footer>
-    <div class="banner-wrapper">
-      <div class="icon-text">
-
-        <div class="icon-text-text">
-
-          <ul class="social">
-
-            <b>Encuentranos en:</b>
-
-            <li>
-              <a href="mailto:contact@faztweb.com">
-                <i class="fa fa-envelope-o"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://facebook.com/fazttech">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com/fazttech">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://instagram.com/fazttech">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a>
-                &copy; <a href="http://faztweb.com">MindConcentrade.com - 2022</a>
-              </a>
-            </li>
-          </ul>
+                        </div>
+                    </div>
+                </div> 
+                </section>            
+    </main>
+    <footer>
+        <div id="contenedor-footer">
+            <div id="content-foo">
+                <h4>telefono</h4>
+                <p>0987654321</p>
+            </div>
+            <div id="content-foo">
+                <h4>Email</h4>
+                <p>mindconcentrade@gmail.com</p>
+            </div>
+            <div id="content-foo">
+                <h4>Ciudad</h4>
+                <p>Quito</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
-
+        <h2 id="titulo-final">&copy;MindConcentrade | Kolab | Yavirac </h2>
+    </footer>
 </body>

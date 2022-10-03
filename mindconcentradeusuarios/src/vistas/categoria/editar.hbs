@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="/css/editar.css ">
+<link rel="stylesheet" href="/css/agregarCliente.css ">
 {{#each lista}}
 <form action="/categoria/editar/{{id_categoria}}" method="post" >
 
-    <div class=" " id="contenedor">
+    <div id="contenedor">
 
         <div id="titulo">
             <h1>Editar datos de la Categoría</h1>
@@ -18,7 +18,7 @@
             <label>Descripcion de la Categoría:</label>
             <input value="{{descripcionCategoria}}" type="text" name="descripcionCategoria" id="descripcion">
         </div>
-        
+
         <br>
         
         <div id="guardar">

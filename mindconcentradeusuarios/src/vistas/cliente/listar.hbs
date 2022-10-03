@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/css/listar.css ">
+
+<body>
+    <form action="/cliente/lista/{{user.id_cliente}}" method="get">
+
+        <div id="controlador"><br>
+            <br>
+
+            <div id="contenedor">
+
+                {{#each lista}}
+                <div id="row">
+                    <div id="column" id="lab">
+                        <div id="grupo">
+                            <label>{{nombreCliente}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{apellidoCliente}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{cedulaCliente}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{direccionCliente}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{celularCliente}}</label>
+                        </div>
+                        <div id="hobbieCliente">
+                            <label>{{hobbieCliente}}</label>
+                        </div>
+                        <div id="grupo">
+                            <label>{{username}}</label>
+                        </div>
+                        <div>
+                            <a href="/cliente/editar/{{id_cliente}}">
+                                <button type="button" id="editar">Editar</button>
+                            </a>
+                            <a href="/cliente/eliminar/{{id_cliente}}">
+                                <button type="button" id="eliminar">Eliminar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    {{/each}}
+
+                </div>
+            </div>
+    </form>
+    </div>
+    <div id="agregar">
+        <a href="/cliente/agregar/">
+            <button type="button" id="agregar"><b> AGREGAR CLIENTE </b></button>
+        </a>
+    </div>
+</body>

@@ -11,4 +11,4 @@ apipreguntasctl.apipreguntas = (req, res) => {
 
 }
 
-module.exports = apipreguntasctl
+module.exports = apipreguntasctl 

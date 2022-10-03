@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/css/agregarCliente.css " />
+
+{{#each lista}}
+
+<form action="/cliente/editar/{{id_cliente}}" method="post">
+  <div id="Form">
+    <h1>ACTUALIZAR DATOS DEL  CLIENTE</h1>
+    <div id="grupo">
+      <input type="text" name="nombreCliente" id="nombreCliente" required><span id="barra"></span>
+      <label for="">Nombre</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="apellidoCliente" id="apellidoCliente" required><span id="barra"></span>
+      <label for="">Apellido</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="cedulaCliente" id="cedulaCliente" required><span id="barra"></span>
+      <label for="">Cedula</label>
+    </div>
+    <div id="grupo">
+      <input type="email" name="correoCliente" id="correoCliente" required><span id="barra"></span>
+      <label for="">Correo Electronico</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="direccionCliente" id="direccionCliente" required><span id="barra"></span>
+      <label for="">Direccion</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="celularCliente" id="celularCliente" required><span id="barra"></span>
+      <label for="">Celular</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="username" id="username" required><span id="barra"></span>
+      <label for="">Nick</label>
+    </div>
+    <div id="grupo">
+      <input type="text" name="hobbieCliente" id="hobbieCliente" required><span id="barra"></span>
+      <label for="">Hobbie</label>
+    </div>
+        <div id="guardar">
+      <button type="submit" id="actualizar">Actualizar</button>
+    </div>
+  </div>
+    {{/each}}
+
+
+</form>

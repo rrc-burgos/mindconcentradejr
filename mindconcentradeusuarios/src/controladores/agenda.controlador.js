@@ -8,22 +8,22 @@ agendactl.mostrar= async(req,res)  =>{
     res.render("agenda/agregar")
 }
 
-agendactl.enviar = async(req,res) =>{
-    const id = req.user.id_usuario
-    const ids = req.params.id
-    const{nombreAgenda,descripcionAgenda, horaAgenda, fechaAgenda} = req.body
-    const nuevaAgenda ={
-        nombreAgenda,
-        descripcionAgenda,
-        horaAgenda,
-        fechaAgenda,
-        usuarioIdUsuario:id
+    agendactl.enviar = async(req,res) =>{
+        const id = req.user.id_usuario
+        const ids = req.params.id
+        const{nombreAgenda,descripcionAgenda, horaAgenda, fechaAgenda} = req.body
+        const nuevaAgenda ={
+            nombreAgenda,
+            descripcionAgenda,
+            horaAgenda,
+            fechaAgenda,
+            usuarioIdUsuario:id
+        }
+        await orm.agenda.create(nuevaAgenda)
+        
+        req.flash("success","Exito al Guardar")
+        res.redirect("/agenda/lista/"+id)
     }
-    await orm.agenda.create(nuevaAgenda)
-    
-    req.flash("success","Exito al Guardar")
-    res.redirect("/agenda/lista/"+id)
-}
 
 agendactl.listar = async (req,res)=>{
     const id = req.user.id_usuario

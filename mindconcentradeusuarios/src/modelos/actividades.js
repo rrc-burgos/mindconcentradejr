@@ -1,6 +1,6 @@
 const actividades =(sequelize, type) =>{
     return sequelize.define('actividades', {
-        id_actividades: {
+        id_actividad: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,
@@ -8,6 +8,7 @@ const actividades =(sequelize, type) =>{
         nombreActividad: type.STRING,
         descripcionActividad: type.STRING,
         fechaActividad: type.STRING ,
+        comentarioActividad: type.STRING,
         
         creacionActividades:{
             type: 'TIMESTAMP',
