@@ -1,3 +1,4 @@
+
 :root {
     --colorTextos: #11daf567;
 }
@@ -11,11 +12,18 @@
 }
 
 body {
+    background: linear-gradient(90deg,#ACB6E5, #86FDE8 );
+}
+
+form {
+    margin-top: 3%;
+    margin-left: 25%;
     font-family: 'Roboto';
     background: #06beb6;
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
     background: linear-gradient(to right, #48b1bf, #06beb6);
-    height: 650px;
+    height: 500px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +51,34 @@ form{
     position: relative;
     margin: 23px;
     background: #fff;
+
+}
+
+#guardar{
+    background: linear-gradient(90deg, #b2fd9f, #04ad3d);
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 15%;
+    left: 27%;
+    font-size: 25px;
+    color:black;
+    
+ }
+ 
+
+#cancelar{
+
+    background: linear-gradient(90deg, #d18080, #b31010);
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    font-size: 25px;
+    color:black;
 
 }
 
@@ -101,21 +137,21 @@ input:focus~#barra::before{
     width: 100%;
 }
 
-#confirmar{
+#guardar{
     outline: none;
-    border: none;
+    padding: 0.4%;
     cursor: pointer;
     font-size: 25px;
     font-weight:700;
     border-radius: 5%;
     color:black;
-    background: linear-gradient(90deg, #a8e0ad, #1d6913);
+    background: linear-gradient(90deg, #80d192, #10b339);
     align-items: center;
  }
  
  #cancelar{
     outline: none;
-    border: none;
+    padding: 0.4%;
     cursor: pointer;
     font-size: 25px;
     font-weight:700;
